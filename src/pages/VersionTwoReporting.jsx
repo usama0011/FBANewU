@@ -237,7 +237,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
           <div
             style={{
               position: "absolute",
-              top: 0,
+              top: "68px",
               left: 0,
               width: `${loadingProgress}%`,
               height: "4px",
@@ -274,15 +274,18 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
                   border: "1px solid #ddd",
                   padding: "8px",
                   textAlign: "left",
+
                   width: `${col.width}px`,
                 }}
               >
                 <div
                   style={{
                     display: "flex",
+                    flexDirection: "row", // Keep items in a row
                     alignItems: "flex-start", // Align items to the top
-                    justifyContent: "space-between", // Align items horizontally to the start
+                    justifyContent: "space-between", // Distribute items horizontally with space between
                     minWidth: "120px",
+
                     minHeight: "50px",
                     width: "100%",
                   }}
