@@ -192,13 +192,15 @@ const SideBar = () => {
             location.pathname.startsWith("/editcampaingtwo/") ||
             location.pathname.startsWith("/editcampaingthree/") ? (
               <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
-                <div class="x3nfvp2 snipcss0-13-60-61">
-                  <i
-                    alt=""
-                    data-visualcompletion="css-img"
-                    class="img snipcss0-14-61-62 style-i5ycv"
-                    id="style-i5ycv"
-                  ></i>
+                <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k x1qsmy5i xvy4d1p xxk0z11">
+                  <div class="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      class="img style-MzxFR"
+                      id="style-MzxFR"
+                    ></i>
+                  </div>
                 </div>
               </div>
             ) : (
@@ -260,13 +262,15 @@ const SideBar = () => {
               </div>
             ) : (
               <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                <div class="x3nfvp2 snipcss0-13-77-78">
-                  <i
-                    alt=""
-                    data-visualcompletion="css-img"
-                    class="img snipcss0-14-78-79 style-5verv"
-                    id="style-5verv"
-                  ></i>
+                <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
+                  <div class="x3nfvp2">
+                    <i
+                      alt=""
+                      data-visualcompletion="css-img"
+                      class="img style-br2oS"
+                      id="style-br2oS"
+                    ></i>
+                  </div>
                 </div>
               </div>
             )}

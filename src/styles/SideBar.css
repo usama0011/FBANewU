@@ -377,6 +377,7 @@ i.img {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
 #style-xyqkp.style-xyqkp {
   display: contents;
 }
@@ -530,6 +531,28 @@ i.img {
   background-size: auto;
   width: 20px;
   height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-MzxFR.style-MzxFR {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v4/y3/r/DeKP7dAAazZ.png?_nc_eui2=AeGoJrZE0cDZs9D86VVccwEMg6L6CXqrgWaDovoJequBZpZ_4jIscvNQ8osJkgYmJoe1Cps4N_hPuUhlUsz-DrFr");
+  background-position: -250px -216px;
+  background-size: auto;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-br2oS.style-br2oS {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v4/y3/r/DeKP7dAAazZ.png?_nc_eui2=AeGoJrZE0cDZs9D86VVccwEMg6L6CXqrgWaDovoJequBZpZ_4jIscvNQ8osJkgYmJoe1Cps4N_hPuUhlUsz-DrFr");
+  background-position: -300px -241px;
+  background-size: auto;
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   display: inline-block;
 }
