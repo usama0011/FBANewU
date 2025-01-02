@@ -216,6 +216,14 @@ const router = createBrowserRouter([
     path: "/editmyadset/:id",
     element: <EditMyAdsSet />,
   },
+  {
+    path: "*", // Catch-all route for 404
+    element: (
+      <Suspense fallback={<CampaigsnPageLoading />}>
+        <App />
+      </Suspense>
+    ),
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
