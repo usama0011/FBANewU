@@ -204,12 +204,12 @@ const SideBar = () => {
             ) : (
               <div class="">
                 <div class="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                  <div class="x3nfvp2">
+                  <div class="x3nfvp2 snipcss0-13-60-61">
                     <i
                       alt=""
                       data-visualcompletion="css-img"
-                      class="img style-9ysPi"
-                      id="style-9ysPi"
+                      class="img snipcss0-14-61-62 style-i5ycv"
+                      id="style-i5ycv"
                     ></i>
                   </div>
                 </div>
@@ -249,23 +249,23 @@ const SideBar = () => {
           >
             {location.pathname === "/reporting" ? (
               <div class="">
-                <div class="x3nfvp2">
+                <div class="x3nfvp2 snipcss0-13-77-78">
                   <i
                     alt=""
                     data-visualcompletion="css-img"
-                    class="img style-K9LEW"
-                    id="style-K9LEW"
+                    class="img snipcss0-14-78-79 style-5verv"
+                    id="style-5verv"
                   ></i>
                 </div>
               </div>
             ) : (
               <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                <div className="x3nfvp2">
+                <div class="x3nfvp2 snipcss0-13-77-78">
                   <i
                     alt=""
                     data-visualcompletion="css-img"
-                    className="img style-Gd5tE"
-                    id="style-Gd5tE"
+                    class="img snipcss0-14-78-79 style-5verv"
+                    id="style-5verv"
                   ></i>
                 </div>
               </div>
@@ -293,12 +293,12 @@ const SideBar = () => {
 
           <li>
             <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-              <div className="x3nfvp2">
+              <div class="x3nfvp2 snipcss0-13-94-95">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  className="img style-4NOtb"
-                  id="style-4NOtb"
+                  class="img snipcss0-14-95-96 style-omPfP"
+                  id="style-omPfP"
                 ></i>
               </div>
             </div>
@@ -336,12 +336,12 @@ const SideBar = () => {
               </div>
             ) : (
               <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-                <div className="x3nfvp2">
+                <div class="x3nfvp2 snipcss0-13-111-112">
                   <i
                     alt=""
                     data-visualcompletion="css-img"
-                    className="img style-yZkhQ"
-                    id="style-yZkhQ"
+                    class="img snipcss0-14-112-113 style-areyy"
+                    id="style-areyy"
                   ></i>
                 </div>
               </div>
@@ -369,12 +369,12 @@ const SideBar = () => {
 
           <li>
             <div className="x78zum5 x1n2onr6 x2lah0s x6s0dn4 xl56j7k xvy4d1p xxk0z11">
-              <div className="x3nfvp2">
+              <div class="x3nfvp2 snipcss0-13-128-129">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  className="img style-qjhZw"
-                  id="style-qjhZw"
+                  class="img snipcss0-14-129-130 style-H7fkD"
+                  id="style-H7fkD"
                 ></i>
               </div>
             </div>
@@ -394,12 +394,12 @@ const SideBar = () => {
               <div className="x78zum5 x1iyjqo2">
                 <div className="">
                   <div className="">
-                    <div className="x3nfvp2">
+                    <div class="x3nfvp2 snipcss0-13-145-146">
                       <i
                         alt=""
                         data-visualcompletion="css-img"
-                        className="img style-8dtnG"
-                        id="style-8dtnG"
+                        class="img snipcss0-14-146-147 style-QOcq4"
+                        id="style-QOcq4"
                       ></i>
                     </div>
                   </div>
@@ -420,12 +420,12 @@ const SideBar = () => {
           </li>
           <li>
             <div className="">
-              <div className="x3nfvp2">
+              <div class="x3nfvp2 snipcss0-12-161-162">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  className="img style-rRLCD"
-                  id="style-rRLCD"
+                  class="img snipcss0-13-162-163 style-ov9Hg"
+                  id="style-ov9Hg"
                 ></i>
               </div>
             </div>
@@ -442,12 +442,12 @@ const SideBar = () => {
             )}
           </li>
           <li>
-            <div className="">
+            <div class="x78zum5 xl56j7k xfex06f ">
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                className="img style-M9oOk"
-                id="style-M9oOk"
+                class="img style-NZj9P"
+                id="style-NZj9P"
               ></i>
             </div>
 
@@ -466,24 +466,21 @@ const SideBar = () => {
         <hr className="divider" />
         <div className="bottom-icons">
           <div className="search-icon">
-            <div className="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-              <div
-                className="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                role="presentation"
-              >
-                <div className="xtwfq29 style-9KpMj" id="style-9KpMj"></div>
-              </div>
-            </div>
+            <div
+              class="xtwfq29 snipcss0-14-214-215 style-ImhVV"
+              id="style-ImhVV"
+            ></div>
           </div>
           <div className="search-icon">
-            <div className="x3nfvp2 x2lah0s x1c4vz4f">
+            <div class="x3nfvp2 x2lah0s x1c4vz4f">
               <i
                 alt=""
                 data-visualcompletion="css-img"
-                className="img style-2xUJN"
-                id="style-2xUJN"
+                class="img style-XWq7o"
+                id="style-XWq7o"
               ></i>
             </div>
+            ​
           </div>
           <div className="search-icon">
             <div className="">
@@ -498,31 +495,26 @@ const SideBar = () => {
           </div>
 
           <div className="search-icon">
-            <div className="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-              <div
-                className="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                role="presentation"
-              >
-                <div className="xtwfq29 style-AA4xG" id="style-AA4xG"></div>
-              </div>
-              ​
-            </div>
+            <div
+              class="xtwfq29 snipcss0-12-247-248 style-xNxlU"
+              id="style-xNxlU"
+            ></div>
           </div>
 
           <div className="search-icon">
-            <div className="">
-              <div
-                onClick={() => handleNavigation("mainnavigation")}
-                className="x3nfvp2 x2lah0s x1c4vz4f"
-              >
+            <div
+              onClick={() => handleNavigation("mainnavigation")}
+              className=""
+            >
+              <div class="x3nfvp2 x2lah0s x1c4vz4f snipcss0-10-254-255">
                 <i
                   alt=""
                   data-visualcompletion="css-img"
-                  className="img style-oF4KY"
-                  id="style-oF4KY"
+                  class="img snipcss0-11-255-256 style-zVbk5"
+                  id="style-zVbk5"
                 ></i>
               </div>
-              ​
+              ​ ​
             </div>
           </div>
         </div>
