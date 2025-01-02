@@ -125,3 +125,50 @@ body {
 .ad-creative-container:hover .hover-ad-preview {
   display: block;
 }
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-3Zn2i.style-3Zn2i {
+  border-right-color: rgb(218, 221, 225);
+  border-bottom-color: rgb(218, 221, 225);
+  height: 72px;
+}
+#style-OQtVP.style-OQtVP {
+  letter-spacing: normal;
+  font-family: Arial, sans-serif;
+  color: rgb(28, 30, 33);
+  font-size: 12px;
+  line-height: 16px;
+}
+#style-bnBpU.style-bnBpU {
+  max-width: 145px;
+}
+#style-I3pLI.style-I3pLI {
+  -webkit-line-clamp: 3;
+}
+#style-Ltq1U.style-Ltq1U {
+  overflow-wrap: break-word;
+}
+#style-qxpXt.style-qxpXt {
+  width: 24px;
+  letter-spacing: normal;
+  color: rgb(68, 73, 80);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  line-height: 24px;
+  text-align: center;
+  background-color: rgb(245, 246, 247);
+  border-color: rgb(218, 221, 225);
+  height: 24px;
+  border-radius: 2px;
+  border-width: 0px;
+}
+#style-UP4Kr.style-UP4Kr {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v4/yb/r/eYzbQUyW0kL.png?_nc_eui2=AeGt-mxT_wybmTt_FXOyZ0PVuBSOSW3WQ8m4FI5JbdZDyYHwhTT6wxMGSnSKHmYepjr0O_25EfSIYfdcXPZEOmaI");
+  background-position: -372px -954px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}

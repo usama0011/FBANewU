@@ -60,7 +60,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
         dataIndex: metric,
         width:
           metric === "Ad Creative"
-            ? 300
+            ? 260
             : metric === "Impression Device"
             ? 180
             : 150,
@@ -281,71 +281,94 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
                   style={{
                     display: "flex",
                     alignItems: "flex-start", // Align items to the top
-                    justifyContent: "flex-start", // Align items horizontally to the start
+                    justifyContent: "space-between", // Align items horizontally to the start
                     minWidth: "120px",
                     minHeight: "50px",
+                    width: "100%",
                   }}
                 >
-                  <div class="x1vjfegm xsgj6o6 x1gslohp">
-                    <div class="_3qn7 _61-0 _2fyh _3qnf">
-                      <div class="_3qn7 _61-0 _2fyi _3qnf">
+                  <div class="" id="style-3Zn2i" style={{ width: "100%" }}>
+                    <div
+                      style={{ width: "100%" }}
+                      class="_2eqm style-OQtVP"
+                      id="style-OQtVP"
+                    >
+                      <div
+                        style={{ width: "100%" }}
+                        class="_2eqm _3qn7 _61-0 _2fyi _3qng"
+                      >
                         <div
-                          role="columnheader"
-                          tabindex="-1"
-                          data-interactable="|mouseover|"
+                          style={{ width: "100%" }}
+                          class="x5yr21d xh8yej3"
+                          draggable="true"
                         >
-                          <span
-                            aria-level="2"
-                            class="x1xqt7ti xm46was x1jrz1v4 xbsr9hj xq9mrsl x1h4wwuj x117nqv4 xeuugli"
-                            role="heading"
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              width: "100%",
+                            }}
+                            class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e"
                           >
-                            <div class="_90u_ style-rFHj4" id="style-rFHj4">
-                              <div
-                                class="_4ik4 _4ik5 style-qAlZS"
-                                id="style-qAlZS"
-                              >
-                                <div id="style-zqMp6" class="style-zqMp6">
-                                  {
-                                    col.title === "CPC"
-                                      ? "CPC (Cost per Link Click)"
-                                      : col.title === "CPM"
-                                      ? "CPM (Cost per 1,000 Impressions)"
-                                      : col.title === "CTR"
-                                      ? "CTR (All)"
-                                      : col.title // Default to the key itself for other titles
-                                  }
+                            <div class="_741s _8_x6 _8_vu"></div>
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "space-between",
+                                width: "100%",
+                              }}
+                              class="x1vjfegm xsgj6o6 x1gslohp"
+                            >
+                              <div class="_3qn7 _61-0 _2fyh _3qnf">
+                                <div class="_3qn7 _61-0 _2fyi _3qnf">
+                                  <div
+                                    class="_90u_ style-bnBpU"
+                                    id="style-bnBpU"
+                                  >
+                                    <div
+                                      class="_4ik4 _4ik5 style-I3pLI"
+                                      id="style-I3pLI"
+                                    >
+                                      <div id="style-Ltq1U" class="style-Ltq1U">
+                                        {
+                                          col.title === "CPC"
+                                            ? "CPC (Cost per Link Click)"
+                                            : col.title === "CPM"
+                                            ? "CPM (Cost per 1,000 Impressions)"
+                                            : col.title === "CTR"
+                                            ? "CTR (All)"
+                                            : col.title // Default to the key itself for other titles
+                                        }
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
+                              <button
+                                aria-pressed="false"
+                                type="button"
+                                aria-disabled="false"
+                                class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-qxpXt"
+                                id="style-qxpXt"
+                              >
+                                <div class="_43rl">
+                                  <i
+                                    aria-hidden="true"
+                                    class="_271o img style-UP4Kr"
+                                    alt=""
+                                    data-visualcompletion="css-img"
+                                    id="style-UP4Kr"
+                                  ></i>
+                                  <span class="accessible_elem">
+                                    Open Inline Column Action Menu
+                                  </span>
+                                </div>
+                              </button>
                             </div>
-                          </span>
-                        </div>
-                      </div>
-                      <div class="xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"></div>
-                    </div>
-                  </div>
-                  <div class="x1gryazu x1vjfegm xxk0z11 xvy4d1p">
-                    <div class="x1gryazu xxk0z11">
-                      <div>
-                        <button
-                          aria-pressed="false"
-                          type="button"
-                          aria-disabled="false"
-                          class="_271k _271l _1o4e _1qjd _ai7j _ai7k _ai7m style-X4qQs"
-                          id="style-X4qQs"
-                        >
-                          <div class="_43rl">
-                            <i
-                              aria-hidden="true"
-                              class="_271o img style-DgV47"
-                              alt=""
-                              data-visualcompletion="css-img"
-                              id="style-DgV47"
-                            ></i>
-                            <span class="accessible_elem">
-                              Open Inline Column Action Menu
-                            </span>
                           </div>
-                        </button>
+                        </div>
                       </div>
                     </div>
                   </div>
