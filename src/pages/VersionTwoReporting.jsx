@@ -291,7 +291,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
       className="versointowsirtable"
       style={{
         width: "100%",
-        height: "700px",
+        height: "730px",
         backgroundColor: "white",
         overflowX: "auto",
         overflowY: "auto",

@@ -2659,7 +2659,7 @@ const Reporting = () => {
                                                 className="mainbarkks"
                                                 style={{
                                                   width: "100%",
-                                                  height: "700px",
+                                                  height: "730px",
                                                   backgroundColor: "white",
                                                   textAlign: "left",
                                                   overflowX: "auto", // Enables horizontal scrolling
@@ -3238,6 +3238,9 @@ const Reporting = () => {
                                                                       "none",
                                                                     msOverflowStyle:
                                                                       "none",
+
+                                                                    height:
+                                                                      "70vh",
                                                                   }}
                                                                   class="_5jln style-HBNw4"
                                                                   id="style-HBNw4"
