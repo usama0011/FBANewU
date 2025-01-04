@@ -219,6 +219,73 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
     }
   }, [selectedMetrics, data]);
 
+  useEffect(() => {
+    if (data.length > 0) {
+      let filteredData = [...data]; // Copy the original data
+
+      const columnHierarchy = [
+        "Page Name",
+        "Campaign Name",
+        "Ad Set Name",
+        "Ad Name",
+        "Ad Creative",
+        "Impression Device",
+        "Placement",
+      ];
+
+      const isImpressionDeviceHidden =
+        !selectedMetrics.includes("Impression Device");
+
+      if (isImpressionDeviceHidden) {
+        const placementData = {};
+
+        filteredData.forEach((row) => {
+          const placement = row["Placement"];
+          if (placement !== "All") {
+            if (!placementData[placement]) {
+              placementData[placement] = {
+                ...row,
+                "Impression Device": "All",
+                "Amount Spent": 0,
+                Impressions: 0,
+              };
+            }
+            placementData[placement]["Amount Spent"] += row["Amount Spent"];
+            placementData[placement]["Impressions"] += row["Impressions"];
+          }
+        });
+
+        filteredData = Object.values(placementData);
+      } else {
+        filteredData = filteredData.filter((row) => {
+          let keepRow = true;
+
+          columnHierarchy.forEach((col, index) => {
+            if (!selectedMetrics.includes(col)) {
+              const nextColumns = columnHierarchy.slice(index + 1);
+
+              const hasDependentData = nextColumns.some(
+                (nextCol) =>
+                  selectedMetrics.includes(nextCol) && row[nextCol] !== "All"
+              );
+
+              if (!hasDependentData && row[col] !== "All") {
+                keepRow = false;
+              }
+            }
+          });
+
+          return keepRow;
+        });
+      }
+
+      // Only update state if the data has changed
+      if (JSON.stringify(filteredData) !== JSON.stringify(data)) {
+        setData(filteredData);
+      }
+    }
+  }, [selectedMetrics, data]);
+
   return (
     <div
       className="versointowsirtable"
