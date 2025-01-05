@@ -136,6 +136,7 @@ const VersionTwoReporting = ({
         "Placement",
         "Amount Spent",
         "Impressions",
+        "Link Clicks",
         "CPC",
         "CPM",
         "CTR",
