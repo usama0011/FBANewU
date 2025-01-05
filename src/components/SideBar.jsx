@@ -244,12 +244,14 @@ const SideBar = () => {
           <li
             onClick={() => handleNavigation("reportstable")}
             style={
-              location.pathname === "/reportstable"
+              location.pathname === "/reportstable" ||
+              location.pathname === "/reporting"
                 ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
                 : { textDecoration: "none" }
             }
           >
-            {location.pathname === "/reportstable" ? (
+            {location.pathname === "/reportstable" ||
+            location.pathname === "/reporting" ? (
               <div class="">
                 <div class="x3nfvp2 snipcss0-13-77-78">
                   <i

@@ -15,6 +15,7 @@ const ReportsTable = () => {
       <div>
         <SideBar />
       </div>
+
       <div
         style={{ marginLeft: "100px", marginTop: "30px" }}
         class="x78zum5 x2lwn1j xeuugli x5yr21d x1n2onr6 x1vjfegm snipcss-JKX2z"
