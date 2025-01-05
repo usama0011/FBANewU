@@ -28,12 +28,16 @@ const EditCompaingThree = () => {
   console.log(campaign);
   return (
     <div>
-      <div class="_2ww1 _7y7x" style={{ width: "40px" }}>
-        <div data-pagelet="AdsSideNavWithContent.react" class="">
+      <div>
+        <div data-pagelet="" class="">
           <SideBar />
         </div>
       </div>
-      <div class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy" id="style-VS3Gy">
+      <div
+        style={{ marginRight: "380px" }}
+        class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy"
+        id="style-VS3Gy"
+      >
         <div
           style={{ marginLeft: "20px", zIndex: "999" }}
           class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4"

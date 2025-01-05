@@ -33,16 +33,12 @@ const EditCompaing = () => {
   console.log(campaign);
   return (
     <div>
-      <div class="_2ww1 _7y7x">
+      <div>
         <div data-pagelet="AdsSideNavWithContent.react" class="">
           <SideBar />
         </div>
       </div>
-      <div
-        s
-        class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy"
-        id="style-VS3Gy"
-      >
+      <div class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy" id="">
         <div
           style={{ marginLeft: "22px", zIndex: "999" }}
           class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4"
@@ -624,7 +620,7 @@ const EditCompaing = () => {
             </div>
           </div>
         </div>
-        <div class="_2k0g">
+        <div class="_2k0g" style={{ width: "1450px" }}>
           <div class="_3ptk _8z1k">
             <div>
               <div>
