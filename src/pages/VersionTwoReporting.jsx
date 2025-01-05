@@ -320,7 +320,7 @@ const VersionTwoReporting = ({
       className="versointowsirtable"
       style={{
         width: "100%",
-        height: "755px",
+        height: "745px",
         backgroundColor: "white",
         overflowX: "auto",
         overflowY: "auto",
@@ -345,6 +345,7 @@ const VersionTwoReporting = ({
       </div>
 
       <table
+        className="reporttingmoiztable"
         style={{
           width: "100%",
           borderCollapse: "collapse",
