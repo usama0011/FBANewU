@@ -666,7 +666,7 @@ const Reporting = () => {
                                 >
                                   <div>
                                     <div
-                                      style={{ height: "100vh" }}
+                                      style={{ height: "100vh", width: "95vw" }}
                                       class="_49wu style-cyQ1t"
                                       id="style-cyQ1t"
                                     >
@@ -2979,6 +2979,11 @@ const Reporting = () => {
                                                                                   "metrics"
                                                                                     ? "bold"
                                                                                     : "normal",
+                                                                                color:
+                                                                                  pivottable ===
+                                                                                  "metrics"
+                                                                                    ? "#1461cc"
+                                                                                    : "black",
                                                                               }}
                                                                               class="x6ikm8r x10wlt62 xlyipyv x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xuxw1ft x2b8uid"
                                                                             >
@@ -3057,6 +3062,10 @@ const Reporting = () => {
                                                                         <div>
                                                                           <div class="xeuugli">
                                                                             <div
+                                                                              style={{
+                                                                                width:
+                                                                                  "100%",
+                                                                              }}
                                                                               class=""
                                                                               role="list"
                                                                             >
@@ -3064,6 +3073,8 @@ const Reporting = () => {
                                                                                 style={{
                                                                                   padding:
                                                                                     "5px 0px",
+                                                                                  width:
+                                                                                    "100%",
                                                                                 }}
                                                                               >
                                                                                 {breakdownData.map(
@@ -3110,8 +3121,8 @@ const Reporting = () => {
                                                                                           <i
                                                                                             alt=""
                                                                                             data-visualcompletion="css-img"
-                                                                                            class="img style-LTgZd"
-                                                                                            id="style-LTgZd"
+                                                                                            class="img style-DXeKT"
+                                                                                            id="style-DXeKT"
                                                                                           ></i>
                                                                                         </div>
                                                                                       </div>

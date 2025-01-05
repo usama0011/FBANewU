@@ -7459,3 +7459,13 @@ i.img {
   background-repeat: no-repeat;
   display: inline-block;
 }
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-DXeKT.style-DXeKT {
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v4/y0/r/boSFU0ZFd9R.png?_nc_eui2=AeHZbP5wq9Zi-t4QedL7Yrz5zQauJS1sGsvNBq4lLWway0xt5yl-x_a_-W7jfGN763h55LyrpmkQvMAPMeWy_5v6");
+  background-position: 0px -796px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
