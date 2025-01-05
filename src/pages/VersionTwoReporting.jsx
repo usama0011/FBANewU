@@ -372,7 +372,9 @@ const VersionTwoReporting = ({
                   border: "1px solid #ddd",
                   padding: "8px",
                   textAlign: "left",
-
+                  ...(col.dataIndex === "Amount Spent" && {
+                    borderLeft: "4px solid #ddd", // Thicker border for Amount Spent column
+                  }),
                   width: `${col.width}px`,
                 }}
               >
@@ -596,6 +598,9 @@ const VersionTwoReporting = ({
                     padding: "8px",
                     textAlign: "left",
                     fontWeight: "normal",
+                    ...(col.dataIndex === "Amount Spent" && {
+                      borderLeft: "5px solid #ddd", // Thicker border for Amount Spent column
+                    }),
                   }}
                 >
                   {/* Check if column title is "Page Name" */}
@@ -619,7 +624,12 @@ const VersionTwoReporting = ({
                       </div>
                     </div>
                   ) : col.title === "Amount Spent" ? (
-                    <div class="_e9n" style={{ textAlign: "right" }}>
+                    <div
+                      class="_e9n"
+                      style={{
+                        textAlign: "right",
+                      }}
+                    >
                       <div class="">
                         <div
                           geotextcolor="value"

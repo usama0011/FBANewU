@@ -948,8 +948,8 @@ const EditCompaingThree = () => {
                                 role="presentation"
                               >
                                 <div
-                                  class="xtwfq29 style-mPBqa"
-                                  id="style-mPBqa"
+                                  class="xtwfq29 style-gkYX5"
+                                  id="style-gkYX5"
                                 ></div>
                               </div>
                             </div>

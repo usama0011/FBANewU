@@ -2458,99 +2458,47 @@ const Reporting = () => {
                                                       class="x6s0dn4 x78zum5 x1nhvcw1 x19lwn94"
                                                       data-auto-logging-component-type="GeoToolBar"
                                                     >
-                                                      <div class="x78zum5 xdt5ytf xdl72j9 x1iyjqo2 xeuugli x1n2onr6 xh8yej3">
-                                                        <div
-                                                          class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s style-5MW5s"
-                                                          data-sscoverage-ignore="true"
-                                                          id="style-5MW5s"
-                                                        >
-                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                            <div class="x1iyjqo2">
-                                                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 xs83m0k x65s2av">
-                                                                <label
-                                                                  id="js_1a"
-                                                                  for="js_19"
-                                                                >
-                                                                  <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli">
-                                                                    <span class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x117nqv4 xeuugli">
-                                                                      view type
-                                                                      selector
-                                                                      for ads
-                                                                      reporting
-                                                                    </span>
-                                                                  </span>
-                                                                </label>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="x1lcm9me x1yr5g0i xo71vjh x5pf9jr x78zum5 xdt5ytf x1iyjqo2">
-                                                          <div class="x78zum5 xdt5ytf x1iyjqo2">
-                                                            <div class="x1iyjqo2">
-                                                              <div class="xh8yej3">
-                                                                <div
-                                                                  aria-busy="false"
-                                                                  aria-expanded="false"
-                                                                  aria-haspopup="listbox"
-                                                                  aria-invalid="false"
-                                                                  aria-labelledby="js_1a js_1d"
-                                                                  aria-owns="js_18"
-                                                                  class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 xdt5ytf x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1ypdohk xh8yej3 x1t137rt"
-                                                                  id="js_19"
-                                                                  role="combobox"
-                                                                  tabindex="0"
-                                                                >
-                                                                  <div class="x1n2onr6 xh8yej3">
-                                                                    <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj xm7lytj x1ykpatu xlu9dua x1w2lkzu">
-                                                                      <div class=""></div>
-                                                                      <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                        <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
-                                                                            <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
-                                                                              ​
-                                                                              <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r xbmpl8g x9otpla x1wsgfga">
-                                                                                <div
-                                                                                  class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl"
-                                                                                  role="presentation"
-                                                                                >
-                                                                                  <i
-                                                                                    alt=""
-                                                                                    data-visualcompletion="css-img"
-                                                                                    class="img style-4NahS"
-                                                                                    id="style-4NahS"
-                                                                                  ></i>
-                                                                                </div>
-                                                                              </div>
-                                                                            </div>
-                                                                            <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xr4vacz x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu x15h3p50 x1gf4pb6 xh7izdl x10emqs4 x2yyzbt xu8dvwe xmi5d70 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
-                                                                              <div
-                                                                                class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli"
-                                                                                id="js_1d"
-                                                                              >
-                                                                                Pivot
-                                                                                Table
-                                                                              </div>
-                                                                            </div>
-                                                                          </div>
-                                                                        </div>
-                                                                        <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
-                                                                          ​
-                                                                          <div
-                                                                            class="x3nfvp2 x120ccyz x1heor9g"
-                                                                            role="presentation"
-                                                                          >
-                                                                            <div
-                                                                              class="xtwfq29 style-MqSxO"
-                                                                              id="style-MqSxO"
-                                                                            ></div>
-                                                                          </div>
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                    <div class="xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x13dflua x6o7n8i xxziih7 x12w9bfk xg01cxk x47corl x10l6tqk x17qophe xds687c x13vifvy x1ey2m1c x6ikm8r x10wlt62 xnl74ce xmb4j5p xdx8kah xwmxa91 xmn8db3 x8lbu6m x2te4dl x1bs8fl3 xhhp2wi x14q35kh x1wa3ocq x1n7iyjn x1t0di37 x1tt7eqi xe25xm5 xsp6npd x1s928wv x1w3onc2 x1j6awrg x9obomg x1ryaxvv x1hvfe8t x1te75w5"></div>
+                                                      <div class="x6s0dn4 x78zum5 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv xwebqov xvyu6v8 xrsgblv x10lij0i x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1gzqxud xbsr9hj xm7lytj x1ykpatu xlu9dua x1w2lkzu snipcss-8DOFT">
+                                                        <div class=""></div>
+                                                        <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                          <div class="x6s0dn4 x78zum5 x1q0g3np x1a02dak x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                            <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                                                              <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
+                                                                ​
+                                                                <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r xbmpl8g x9otpla x1wsgfga">
+                                                                  <div
+                                                                    class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl"
+                                                                    role="presentation"
+                                                                  >
+                                                                    <i
+                                                                      alt=""
+                                                                      data-visualcompletion="css-img"
+                                                                      class="img style-C67Q2"
+                                                                      id="style-C67Q2"
+                                                                    ></i>
                                                                   </div>
                                                                 </div>
                                                               </div>
+                                                              <div class="xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xdj266r x11i5rnm xat24cr x1mh8g0r x1t137rt xexx8yu x4uap5 x18d9i69 xkhd6sd xlyipyv xwd1esu x1gnnqk1 xbsr9hj x1urst0s x1glnyev x1ad04t7 x1ix68h3 x19gujb8 xni1clt x1tutvks xfrpkgu xmi5d70 x1fvot60 xo1l8bm xxio538 x1iyjqo2 x6ikm8r x10wlt62">
+                                                                <div
+                                                                  class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1uvtmcs"
+                                                                  id="js_bc"
+                                                                >
+                                                                  Pivot Table
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="x6s0dn4 x3nfvp2 x1q0g3np xozqiw3 x2lwn1j xeuugli x1c4vz4f x19lwn94 xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl xqcrz7y x2lah0s">
+                                                            ​
+                                                            <div
+                                                              class="x3nfvp2 x120ccyz x1heor9g"
+                                                              role="presentation"
+                                                            >
+                                                              <div
+                                                                class="xtwfq29 style-yKmNX"
+                                                                id="style-yKmNX"
+                                                              ></div>
                                                             </div>
                                                           </div>
                                                         </div>
@@ -2596,8 +2544,8 @@ const Reporting = () => {
                                                                 <i
                                                                   alt=""
                                                                   data-visualcompletion="css-img"
-                                                                  class="img style-QE6kk"
-                                                                  id="style-QE6kk"
+                                                                  class="img style-qYHrL"
+                                                                  id="style-qYHrL"
                                                                 ></i>
                                                               </div>
                                                               <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
@@ -2632,8 +2580,8 @@ const Reporting = () => {
                                                                   <i
                                                                     alt=""
                                                                     data-visualcompletion="css-img"
-                                                                    class="img style-4MDXR"
-                                                                    id="style-4MDXR"
+                                                                    class="img style-iN5SP"
+                                                                    id="style-iN5SP"
                                                                   ></i>
                                                                 </div>
                                                                 <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
@@ -2663,10 +2611,11 @@ const Reporting = () => {
                                                                   <i
                                                                     alt=""
                                                                     data-visualcompletion="css-img"
-                                                                    class="img style-qV8vi"
-                                                                    id="style-qV8vi"
+                                                                    class="img style-k4MBO"
+                                                                    id="style-k4MBO"
                                                                   ></i>
                                                                 </div>
+
                                                                 <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                                                   Customise
                                                                 </div>
