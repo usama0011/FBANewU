@@ -7262,14 +7262,22 @@ i.img {
 
 .latestreporting-option input {
   margin-right: 10px;
-  width: 17px !important;
-  height: 17px !important;
+  width: 20px !important; /* Increased width */
+  height: 20px !important; /* Increased height */
+  border: 2px solid gainsboro !important; /* Changed border color */
+  border-radius: 50% !important; /* Ensure the input remains circular */
+}
+
+.latestreporting-option input:checked {
+  background-color: #0976c3 !important; /* Changed fill dot background color */
 }
 
 .latestreporting-option label {
-  color: #606770;
+  color: #606770 !important;
+  font-weight: 500;
   white-space: nowrap;
 }
+
 .latestreporting-day-labels {
   display: grid;
   grid-template-columns: repeat(7, 1fr);

@@ -16,22 +16,22 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* General scrollbar styles */
-::-webkit-scrollbar {
+/* Scoped scrollbar styles for versointowsirtable */
+.versointowsirtable::-webkit-scrollbar {
   height: 8px; /* Height for horizontal scrollbar */
   width: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+.versointowsirtable::-webkit-scrollbar-thumb {
   background-color: #b0b0b0; /* Thumb color */
   border-radius: 4px; /* Rounded corners */
 }
 
-::-webkit-scrollbar-thumb:hover {
+.versointowsirtable::-webkit-scrollbar-thumb:hover {
   background-color: #909090; /* Darker color on hover */
 }
 
-::-webkit-scrollbar-track {
+.versointowsirtable::-webkit-scrollbar-track {
   background-color: white; /* Track color */
   border-radius: 4px; /* Rounded corners */
 }

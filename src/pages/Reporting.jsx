@@ -1308,7 +1308,7 @@ const Reporting = () => {
                                                                 position:
                                                                   "absolute",
                                                                 top: "48px",
-                                                                right: "20px",
+                                                                right: "-230px",
                                                                 zIndex: 3000,
                                                               }}
                                                             >
@@ -1390,7 +1390,12 @@ const Reporting = () => {
                                                                             }}
                                                                           />
                                                                         </button>
-                                                                        <span>
+                                                                        <span
+                                                                          style={{
+                                                                            color:
+                                                                              "#606770",
+                                                                          }}
+                                                                        >
                                                                           {currentMonth.toLocaleString(
                                                                             "default",
                                                                             {
@@ -1399,6 +1404,14 @@ const Reporting = () => {
                                                                             }
                                                                           )}{" "}
                                                                           {currentMonth.getFullYear()}
+                                                                        </span>
+                                                                        <span
+                                                                          style={{
+                                                                            visibility:
+                                                                              "hidden",
+                                                                          }}
+                                                                        >
+                                                                          d
                                                                         </span>
                                                                       </div>
                                                                       <div className="latestreporting-day-labels">
@@ -1454,7 +1467,12 @@ const Reporting = () => {
                                                                         >
                                                                           ss
                                                                         </span>
-                                                                        <span>
+                                                                        <span
+                                                                          style={{
+                                                                            color:
+                                                                              "#606770",
+                                                                          }}
+                                                                        >
                                                                           {new Date(
                                                                             currentMonth.getFullYear(),
                                                                             currentMonth.getMonth() +
@@ -1530,8 +1548,12 @@ const Reporting = () => {
                                                                   >
                                                                     <select
                                                                       style={{
+                                                                        minWidth:
+                                                                          "180px",
                                                                         height:
                                                                           "40px",
+                                                                        color:
+                                                                          "#606770",
                                                                       }}
                                                                       value={
                                                                         selectedOption
@@ -1585,6 +1607,8 @@ const Reporting = () => {
                                                                       style={{
                                                                         height:
                                                                           "28px",
+                                                                        color:
+                                                                          "#606770",
                                                                       }}
                                                                       type="text"
                                                                       value={
@@ -1598,6 +1622,8 @@ const Reporting = () => {
                                                                       style={{
                                                                         height:
                                                                           "28px",
+                                                                        color:
+                                                                          "#606770",
                                                                       }}
                                                                       type="text"
                                                                       value={
@@ -1647,8 +1673,7 @@ const Reporting = () => {
                                                                             "5px",
                                                                           width:
                                                                             "80px",
-                                                                          fontWeight:
-                                                                            "bold",
+
                                                                           marginRight:
                                                                             "5px",
                                                                         }}
@@ -2682,7 +2707,7 @@ const Reporting = () => {
                                                   <div
                                                     style={{
                                                       height: "90vh",
-                                                      width: "100%",
+                                                      width: "95%",
                                                     }}
                                                     class="style-P4IHn"
                                                     id="style-P4IHn"
@@ -3037,7 +3062,8 @@ const Reporting = () => {
                                                                       "none",
                                                                     msOverflowStyle:
                                                                       "none",
-
+                                                                    width:
+                                                                      "fit-content",
                                                                     height:
                                                                       "70vh",
                                                                   }}
@@ -3238,7 +3264,8 @@ const Reporting = () => {
                                                                       "none",
                                                                     msOverflowStyle:
                                                                       "none",
-
+                                                                    width:
+                                                                      "fit-content",
                                                                     height:
                                                                       "70vh",
                                                                   }}
