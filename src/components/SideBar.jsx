@@ -12,8 +12,8 @@ const SideBar = () => {
   const handleNavigation = (page) => {
     if (page === "overviewaccount") {
       navigate("/overviewaccount");
-    } else if (page === "reporting") {
-      navigate("/reporting");
+    } else if (page === "reportstable") {
+      navigate("/reportstable");
     } else if (page === "payment") {
       navigate("/payment");
     } else if (page === "mainnavigation") {
@@ -242,14 +242,14 @@ const SideBar = () => {
           </li>
 
           <li
-            onClick={() => handleNavigation("reporting")}
+            onClick={() => handleNavigation("reportstable")}
             style={
-              location.pathname === "/reporting"
+              location.pathname === "/reportstable"
                 ? { textDecoration: "none", backgroundColor: "#C3DCF5" }
                 : { textDecoration: "none" }
             }
           >
-            {location.pathname === "/reporting" ? (
+            {location.pathname === "/reportstable" ? (
               <div class="">
                 <div class="x3nfvp2 snipcss0-13-77-78">
                   <i
@@ -281,7 +281,7 @@ const SideBar = () => {
                   className="x1xqt7ti x1uxerd5 xrohxju xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1fcty0u xeuugli"
                   id="js_h"
                   style={
-                    location.pathname === "/reporting"
+                    location.pathname === "/reportstable"
                       ? {
                           textDecoration: "none",
                           color: "#0866ff",

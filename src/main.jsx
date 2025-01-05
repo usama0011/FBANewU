@@ -43,6 +43,9 @@ import UploadReportingCSV from "./pages/UploadReportingCSV";
 import LoadingDiv from "./components/LoadingDivReporting";
 import CampaigsnPageLoading from "./components/CampaigsnPageLoading";
 import LatestVersionTwoCalender from "./components/LatestVersionTwoCalender";
+import ReportsTableLoading from "./components/ReportsTableLoading";
+const ReportsTable = lazy(() => import("./pages/ReportsTable"));
+
 const Reporting = lazy(() => import("./pages/./Reporting"));
 const App = lazy(() => import("./App"));
 
@@ -215,6 +218,14 @@ const router = createBrowserRouter([
   {
     path: "/editmyadset/:id",
     element: <EditMyAdsSet />,
+  },
+  {
+    path: "/reportstable",
+    element: (
+      <Suspense fallback={<ReportsTableLoading />}>
+        <ReportsTable />
+      </Suspense>
+    ),
   },
   {
     path: "*", // Catch-all route for 404
