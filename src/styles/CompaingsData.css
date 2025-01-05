@@ -5362,7 +5362,7 @@ html {
   overflow-y: scroll;
   top: 50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  right: 130px;
+  right: 155px;
   z-index: 987 !important;
 }
 .custommadeui::-webkit-scrollbar {

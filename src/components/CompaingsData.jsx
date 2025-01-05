@@ -3647,7 +3647,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "600px",
                   top: "0px",
-                  left: "849px",
+                  left: "1055px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3701,7 +3701,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "450px",
                   top: "100px",
-                  left: "849px",
+                  left: "1055px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3749,7 +3749,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "300px",
                   top: "255px",
-                  left: "849px",
+                  left: "1055px",
                   borderRadius: "5px",
                   zIndex: 999,
                   padding: "10px",
@@ -3791,7 +3791,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "300px",
                   top: "300px",
-                  left: "849px",
+                  left: "1055px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}
@@ -3831,7 +3831,7 @@ const CompaingsData = ({
                   width: "250px",
                   height: "420px",
                   top: "100px",
-                  left: "849px",
+                  left: "1055px",
                   borderRadius: "5px",
                   zIndex: 999,
                 }}

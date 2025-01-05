@@ -40,7 +40,7 @@ const EditCompaing = () => {
       </div>
       <div class="_2k0c _96v5 _8_1l snipcss-o723F style-VS3Gy" id="">
         <div
-          style={{ marginLeft: "22px", zIndex: "999" }}
+          style={{ marginLeft: "25px", zIndex: "999" }}
           class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4"
         >
           <div
