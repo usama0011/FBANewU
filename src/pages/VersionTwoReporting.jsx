@@ -6,6 +6,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
   const [columns, setColumns] = useState([]);
   const [loading, setLoading] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
+  const [originalData, setOriginalData] = useState([]); // Store the original unfiltered data
 
   const formatDate = (date) => {
     if (!date) return "";
@@ -55,6 +56,20 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
 
   useEffect(() => {
     if (data.length > 0) {
+      const columnOrder = [
+        "Page Name",
+        "Campaign Name",
+        "Ad Set Name",
+        "Ad Name",
+        "Ad Creative",
+        "Impression Device",
+        "Placement",
+        "Amount Spent",
+        "Impressions",
+        "CPC",
+        "CPM",
+        "CTR",
+      ];
       const dynamicColumns = selectedMetrics.map((metric) => ({
         title: metric,
         dataIndex: metric,
@@ -215,77 +230,82 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
           return null;
         },
       }));
-      setColumns(dynamicColumns);
+      // Sort columns based on predefined order
+      const sortedColumns = dynamicColumns.sort(
+        (a, b) => columnOrder.indexOf(a.title) - columnOrder.indexOf(b.title)
+      );
+
+      setColumns(sortedColumns);
     }
   }, [selectedMetrics, data]);
-
   useEffect(() => {
-    if (data.length > 0) {
-      let filteredData = [...data]; // Copy the original data
+    if (data.length > 0 && originalData.length === 0) {
+      setOriginalData([...data]); // Initialize original data
+    }
 
-      const columnHierarchy = [
-        "Page Name",
-        "Campaign Name",
-        "Ad Set Name",
-        "Ad Name",
-        "Ad Creative",
-        "Impression Device",
-        "Placement",
-      ];
+    let filteredData = [...originalData]; // Always work with the original data
 
-      const isImpressionDeviceHidden =
-        !selectedMetrics.includes("Impression Device");
+    const columnHierarchy = [
+      "Page Name",
+      "Campaign Name",
+      "Ad Set Name",
+      "Ad Name",
+      "Ad Creative",
+      "Impression Device",
+      "Placement",
+    ];
 
-      if (isImpressionDeviceHidden) {
-        const placementData = {};
+    const isImpressionDeviceHidden =
+      !selectedMetrics.includes("Impression Device");
 
-        filteredData.forEach((row) => {
-          const placement = row["Placement"];
-          if (placement !== "All") {
-            if (!placementData[placement]) {
-              placementData[placement] = {
-                ...row,
-                "Impression Device": "All",
-                "Amount Spent": 0,
-                Impressions: 0,
-              };
+    if (isImpressionDeviceHidden) {
+      const placementData = {};
+
+      filteredData.forEach((row) => {
+        const placement = row["Placement"];
+        if (placement !== "All") {
+          if (!placementData[placement]) {
+            placementData[placement] = {
+              ...row,
+              "Impression Device": "All",
+              "Amount Spent": 0,
+              Impressions: 0,
+            };
+          }
+          placementData[placement]["Amount Spent"] += row["Amount Spent"];
+          placementData[placement]["Impressions"] += row["Impressions"];
+        }
+      });
+
+      filteredData = Object.values(placementData);
+    } else {
+      filteredData = filteredData.filter((row) => {
+        let keepRow = true;
+
+        columnHierarchy.forEach((col, index) => {
+          if (!selectedMetrics.includes(col)) {
+            const nextColumns = columnHierarchy.slice(index + 1);
+
+            const hasDependentData = nextColumns.some(
+              (nextCol) =>
+                selectedMetrics.includes(nextCol) && row[nextCol] !== "All"
+            );
+
+            if (!hasDependentData && row[col] !== "All") {
+              keepRow = false;
             }
-            placementData[placement]["Amount Spent"] += row["Amount Spent"];
-            placementData[placement]["Impressions"] += row["Impressions"];
           }
         });
 
-        filteredData = Object.values(placementData);
-      } else {
-        filteredData = filteredData.filter((row) => {
-          let keepRow = true;
-
-          columnHierarchy.forEach((col, index) => {
-            if (!selectedMetrics.includes(col)) {
-              const nextColumns = columnHierarchy.slice(index + 1);
-
-              const hasDependentData = nextColumns.some(
-                (nextCol) =>
-                  selectedMetrics.includes(nextCol) && row[nextCol] !== "All"
-              );
-
-              if (!hasDependentData && row[col] !== "All") {
-                keepRow = false;
-              }
-            }
-          });
-
-          return keepRow;
-        });
-      }
-
-      // Only update state if the data has changed
-      if (JSON.stringify(filteredData) !== JSON.stringify(data)) {
-        setData(filteredData);
-      }
+        return keepRow;
+      });
     }
-  }, [selectedMetrics, data]);
 
+    // Only update state if the filtered data changes
+    if (JSON.stringify(filteredData) !== JSON.stringify(data)) {
+      setData(filteredData);
+    }
+  }, [selectedMetrics, originalData]);
   return (
     <div
       className="versointowsirtable"
