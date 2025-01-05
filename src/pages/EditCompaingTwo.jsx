@@ -44,7 +44,7 @@ const EditCompaingTwo = () => {
         style={{ marginRight: "380px" }}
       >
         <div
-          style={{ marginLeft: "22px", zIndex: "999" }}
+          style={{ marginLeft: "25px", zIndex: "999" }}
           class="x1a0uwpx x78zum5 x1ob5r32 xdt5ytf x5yr21d x1jj3tg0 x6ikm8r x10wlt62 x1iorvi4 x4uap5 x18d9i69 xkhd6sd x10l6tqk x187nhsf x1vjfegm x5jzwa4"
         >
           <div
@@ -70,16 +70,16 @@ const EditCompaingTwo = () => {
           <div
             aria-disabled="false"
             aria-label="View charts (Ctrl+Y)"
-            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-2nYG7"
+            class="x972fbf xcfux6l x1qhh985 xm0m39n x1ejq31n xd10rxx x1sy0etr x17r0tee x15wryii x14yi0bh x2kcyu4 xmfk5bu x9f619 x1ypdohk xc9qbxq x1a2a7pz x889kno x1iji9kk x1a8lsjc x1sln4lm x1n2onr6 x14qfxbe x1gslohp x12nagc xsgj6o6 xw3qccf x1lcm9me x1yr5g0i xrt01vj x10y3i5r xjbqb8w snipcss-QxH4d"
             data-pitloot-persistonclick="false"
             id="insights_tray_button"
             role="button"
             tabindex="0"
-            data-auto-logging-id="ff96db40273478"
+            data-auto-logging-id="f635e58ec"
           >
             <div class="xbsr9hj">
               <div class="x3nfvp2 x120ccyz x140t73q" role="presentation">
-                <div class="xtwfq29 style-iBrpU" id="style-iBrpU"></div>
+                <div class="xtwfq29 style-ayZwS" id="style-ayZwS"></div>
               </div>
             </div>
           </div>
