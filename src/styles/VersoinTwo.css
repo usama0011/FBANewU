@@ -172,3 +172,9 @@ body {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+/* Add thicker left border for "Amount Spent" column */
+.reporttingmoiztable th[data-index="Amount Spent"],
+td[data-index="Amount Spent"] {
+  border-left: 4px solid #ddd !important; /* Adjust the width and color as needed */
+}

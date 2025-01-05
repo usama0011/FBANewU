@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../styles/VersoinTwo.css";
 import HoverBox from "../components/HoverBox";
-const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
+const VersionTwoReporting = ({
+  startDate,
+  endDate,
+  selectedMetrics,
+  loading,
+  setLoading,
+}) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [originalData, setOriginalData] = useState([]); // Store the original unfiltered data
 
@@ -117,7 +122,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
 
   useEffect(() => {
     fetchData();
-  }, [formattedStartDate, formattedEndDate]);
+  }, [formattedStartDate, formattedEndDate, selectedMetrics]);
 
   useEffect(() => {
     if (data.length > 0) {
@@ -315,7 +320,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
       className="versointowsirtable"
       style={{
         width: "100%",
-        height: "730px",
+        height: "755px",
         backgroundColor: "white",
         overflowX: "auto",
         overflowY: "auto",
@@ -521,6 +526,7 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
                     return (
                       <td
                         key={col.dataIndex}
+                        data-index={col.dataIndex} // Add data-index dynamically
                         style={{
                           borderTop: shouldHide ? "none" : "1px solid #ddd",
                           borderBottom: hideBottomBorder
@@ -529,7 +535,9 @@ const VersionTwoReporting = ({ startDate, endDate, selectedMetrics }) => {
                           borderLeft: "1px solid #ddd", // Keep left border
                           borderRight: "1px solid #ddd", // Keep right border
                           padding: shouldHide ? "0" : "10px 5px",
-
+                          ...(col.dataIndex === "Amount Spent" && {
+                            borderLeft: "5px solid #ddd", // Thicker border for Amount Spent column
+                          }),
                           textAlign: "left",
                           visibility: shouldHide ? "hidden" : "visible",
                           backgroundColor: shouldHide

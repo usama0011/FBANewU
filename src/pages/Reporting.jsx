@@ -10,6 +10,7 @@ import VersionTwoReporting from "./VersionTwoReporting";
 const Reporting = () => {
   const [isFocused, setIsFocused] = useState(false);
   const [campaignbox, setcampaignbox] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [showID, setShowID] = useState("");
   const [showcurrentpageID, setcurrentPageID] = useState(false);
   const [showcalender, setShowCalender] = useState(false);
@@ -2684,7 +2685,7 @@ const Reporting = () => {
                                                 className="mainbarkks"
                                                 style={{
                                                   width: "100%",
-                                                  height: "730px",
+                                                  height: "755px",
                                                   backgroundColor: "white",
                                                   textAlign: "left",
                                                   overflowX: "auto", // Enables horizontal scrolling
@@ -2698,6 +2699,8 @@ const Reporting = () => {
                                                   selectedMetrics={
                                                     selectedMetrics
                                                   }
+                                                  loading={loading}
+                                                  setLoading={setLoading}
                                                 />
                                               </div>
                                             </div>
@@ -2942,6 +2945,8 @@ const Reporting = () => {
                                                                                   "5px",
                                                                                 color:
                                                                                   "#1461cc",
+                                                                                fontWeight:
+                                                                                  "bold",
                                                                               }
                                                                             : {
                                                                                 backgroundColor:
@@ -2967,7 +2972,16 @@ const Reporting = () => {
                                                                             aria-hidden="true"
                                                                             class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
                                                                           >
-                                                                            <span class="x6ikm8r x10wlt62 xlyipyv x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4">
+                                                                            <span
+                                                                              style={{
+                                                                                fontWeight:
+                                                                                  pivottable ===
+                                                                                  "breakdown"
+                                                                                    ? "bold"
+                                                                                    : "normal",
+                                                                              }}
+                                                                              class="x6ikm8r x10wlt62 xlyipyv x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x2b8uid x117nqv4"
+                                                                            >
                                                                               Breakdowns
                                                                             </span>
                                                                           </div>
@@ -2983,6 +2997,8 @@ const Reporting = () => {
 
                                                                                 color:
                                                                                   "#1461cc",
+                                                                                fontWeight:
+                                                                                  "bold",
                                                                               }
                                                                             : {
                                                                                 backgroundColor:
@@ -3007,7 +3023,16 @@ const Reporting = () => {
                                                                             aria-hidden="true"
                                                                             class="x3nfvp2 xdt5ytf xs83m0k xeuugli x6ikm8r x10wlt62"
                                                                           >
-                                                                            <span class="x6ikm8r x10wlt62 xlyipyv x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xuxw1ft x2b8uid">
+                                                                            <span
+                                                                              style={{
+                                                                                fontWeight:
+                                                                                  pivottable ===
+                                                                                  "metrics"
+                                                                                    ? "bold"
+                                                                                    : "normal",
+                                                                              }}
+                                                                              class="x6ikm8r x10wlt62 xlyipyv x8t9es0 x1fvot60 xo1l8bm xxio538 x108nfp6 xuxw1ft x2b8uid"
+                                                                            >
                                                                               Metrics
                                                                             </span>
                                                                           </div>

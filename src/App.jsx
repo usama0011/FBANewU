@@ -2623,6 +2623,21 @@ const App = () => {
                                                                   <div class="_1uz0">
                                                                     <div>
                                                                       {" "}
+                                                                      <div
+                                                                        style={{
+                                                                          marginRight:
+                                                                            "8px",
+                                                                          marginTop:
+                                                                            "5px",
+                                                                        }}
+                                                                        class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                                                                        role="presentation"
+                                                                      >
+                                                                        <div
+                                                                          class="xtwfq29 style-VkEAs"
+                                                                          id="style-VkEAs"
+                                                                        ></div>
+                                                                      </div>
                                                                       {formatDate(
                                                                         startDate
                                                                       )}{" "}
