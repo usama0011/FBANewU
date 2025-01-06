@@ -14,6 +14,7 @@ const Reporting = () => {
   const [showID, setShowID] = useState("");
   const [showcurrentpageID, setcurrentPageID] = useState(false);
   const [showcalender, setShowCalender] = useState(false);
+  const [FetchPageID, setFetchPageID] = useState("");
   const [pivottable, setPovitTable] = useState("breakdown");
   const [selectedMetrics, setSelectedMetrics] = useState([
     "Campaign Name",
@@ -602,7 +603,10 @@ const Reporting = () => {
       endDate?.getMonth() === now?.getMonth()
     );
   };
-
+  const handleApplyClick = () => {
+    setcurrentPageID(true);
+    setFetchPageID(showID);
+  };
   return (
     <div>
       <div
@@ -1100,11 +1104,14 @@ const Reporting = () => {
                                                                               cursor:
                                                                                 "pointer",
                                                                             }}
-                                                                            onClick={() =>
+                                                                            onClick={() => {
                                                                               setcurrentPageID(
                                                                                 false
-                                                                              )
-                                                                            }
+                                                                              );
+                                                                              setFetchPageID(
+                                                                                ""
+                                                                              );
+                                                                            }}
                                                                             aria-busy="false"
                                                                           >
                                                                             <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
@@ -2393,10 +2400,8 @@ const Reporting = () => {
                                                                   <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli xh8yej3">
                                                                     <div class="x78zum5">
                                                                       <div
-                                                                        onClick={() =>
-                                                                          setcurrentPageID(
-                                                                            true
-                                                                          )
+                                                                        onClick={
+                                                                          handleApplyClick
                                                                         }
                                                                         class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3"
                                                                       >
@@ -2643,6 +2648,7 @@ const Reporting = () => {
                                                   selectedMetrics={
                                                     selectedMetrics
                                                   }
+                                                  showID={FetchPageID}
                                                   loading={loading}
                                                   setLoading={setLoading}
                                                 />

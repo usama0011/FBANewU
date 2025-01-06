@@ -7,12 +7,13 @@ const VersionTwoReporting = ({
   selectedMetrics,
   loading,
   setLoading,
+  showID,
 }) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [originalData, setOriginalData] = useState([]); // Store the original unfiltered data
-
+  console.log(showID);
   const formatDate = (date) => {
     if (!date) return "";
     const d = new Date(date);
@@ -98,7 +99,7 @@ const VersionTwoReporting = ({
       }, 200);
 
       const response = await fetch(
-        `https://facebookadsmangerserver.vercel.app/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}`
+        `https://facebookadsmangerserver.vercel.app/api/reporting/reporting/summed?startDate=${formattedStartDate}&endDate=${formattedEndDate}&PageID=${showID}`
       );
       const result = await response.json();
 
@@ -128,7 +129,7 @@ const VersionTwoReporting = ({
 
   useEffect(() => {
     fetchData();
-  }, [formattedStartDate, formattedEndDate, selectedMetrics]);
+  }, [formattedStartDate, formattedEndDate, selectedMetrics, showID]);
 
   useEffect(() => {
     if (data.length > 0) {
