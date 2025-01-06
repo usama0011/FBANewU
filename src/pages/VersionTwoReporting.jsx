@@ -107,9 +107,15 @@ const VersionTwoReporting = ({
 
       // Apply column visibility filtering
       const filteredData = filterData(result, selectedMetrics);
-      setData(filteredData);
+      // Add "Results" column by copying values from "Link Clicks"
+      const updatedData = filteredData.map((row) => ({
+        ...row,
+        Results: row["Link Clicks"],
+      }));
 
-      console.log(result);
+      setData(updatedData);
+
+      console.log(data);
       clearInterval(interval);
       setLoadingProgress(100);
       setTimeout(() => setLoadingProgress(0), 500);
@@ -136,7 +142,9 @@ const VersionTwoReporting = ({
         "Placement",
         "Amount Spent",
         "Impressions",
+        "Reach",
         "Link Clicks",
+        "Results", // Add Results column here
         "CPC",
         "CPM",
         "CTR",
@@ -147,6 +155,12 @@ const VersionTwoReporting = ({
         width:
           metric === "Ad Creative"
             ? 260
+            : metric === "Campaign Name"
+            ? 190
+            : metric === "Ad Set Name"
+            ? 190
+            : metric === "Ad Name"
+            ? 190
             : metric === "Impression Device"
             ? 180
             : 150,
@@ -154,6 +168,25 @@ const VersionTwoReporting = ({
           const previousRow = data[index - 1];
           // Handle specific formatting for "Impressions"
           // Handle specific formatting for CPC, CPM, and CTR
+          // Add specific rendering logic for the Results column
+          if (metric === "Results") {
+            return (
+              <div
+                style={{
+                  textAlign: "right",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <span style={{ padding: 0, margin: 0 }}>
+                  {Number(row["Link Clicks"]).toLocaleString("en-US")}
+                </span>
+                <span style={{ padding: 0, margin: 0, color: "#a0a2a3" }}>
+                  Link Click
+                </span>
+              </div>
+            );
+          }
           if (["CPC", "CPM", "CTR"].includes(metric) && text) {
             const roundedValue = Number(text).toFixed(2); // Round off to two decimal places
 
@@ -167,6 +200,9 @@ const VersionTwoReporting = ({
           }
 
           if (metric === "Impressions" && text) {
+            return Number(text).toLocaleString("en-US"); // Apply comma-separated formatting
+          }
+          if (metric === "Reach" && text) {
             return Number(text).toLocaleString("en-US"); // Apply comma-separated formatting
           }
           if (metric === "Link Clicks" && text) {
@@ -196,9 +232,10 @@ const VersionTwoReporting = ({
             if (metric === "Ad Name" && text) {
               return (
                 <span
+                  className="custom-hover-title"
                   style={{
                     display: "inline-block",
-                    maxWidth: "150px",
+                    maxWidth: "190px",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
@@ -214,7 +251,7 @@ const VersionTwoReporting = ({
                 <span
                   style={{
                     display: "inline-block",
-                    maxWidth: "150px",
+                    maxWidth: "190px",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
@@ -230,7 +267,7 @@ const VersionTwoReporting = ({
                 <span
                   style={{
                     display: "inline-block",
-                    maxWidth: "150px",
+                    maxWidth: "190px",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     whiteSpace: "nowrap",
@@ -371,11 +408,12 @@ const VersionTwoReporting = ({
                   backgroundColor: "white",
                   border: "1px solid #ddd",
                   padding: "8px",
-                  fontWeight: "normal",
+                  fontWeight: "bold",
                   textAlign: "left",
                   ...(col.dataIndex === "Amount Spent" && {
                     borderLeft: "4px solid #ddd", // Thicker border for Amount Spent column
                   }),
+
                   width: `${col.width}px`,
                 }}
               >
@@ -416,6 +454,19 @@ const VersionTwoReporting = ({
                             class="x1cy8zhl xjbqb8w x9f619 x78zum5 x5yr21d xh8yej3 x1ypdohk x1xmf6yo x1e56ztr x1e558r4 x150jy0e"
                           >
                             <div class="_741s _8_x6 _8_vu"></div>
+                            <div>
+                              {col?.dataIndex === "Results" && (
+                                <span id="">
+                                  <i
+                                    style={{ marginTop: "5px" }}
+                                    alt=""
+                                    data-visualcompletion="css-img"
+                                    class="img style-ffYGH"
+                                    id="style-ffYGH"
+                                  ></i>
+                                </span>
+                              )}
+                            </div>
                             <div
                               style={{
                                 display: "flex",
@@ -436,7 +487,16 @@ const VersionTwoReporting = ({
                                       class="_4ik4 _4ik5 style-I3pLI"
                                       id="style-I3pLI"
                                     >
-                                      <div id="style-Ltq1U" class="style-Ltq1U">
+                                      <div
+                                        style={{
+                                          ...(col.dataIndex ===
+                                            "Amount Spent" && {
+                                            color: "#3984ce", // Thicker border for Amount Spent column
+                                          }),
+                                        }}
+                                        id="style-Ltq1U"
+                                        class="style-Ltq1U"
+                                      >
                                         {
                                           col.title === "CPC"
                                             ? "CPC (Cost per Link Click)"
@@ -540,7 +600,7 @@ const VersionTwoReporting = ({
                             : "1px solid #ddd", // Conditionally hide bottom border
                           borderLeft: "1px solid #ddd", // Keep left border
                           borderRight: "1px solid #ddd", // Keep right border
-                          padding: shouldHide ? "0" : "10px 5px",
+                          padding: shouldHide ? "0" : "6px 5px",
                           ...(col.dataIndex === "Amount Spent" && {
                             borderLeft: "5px solid #ddd", // Thicker border for Amount Spent column
                           }),
@@ -715,6 +775,43 @@ const VersionTwoReporting = ({
                         >
                           <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
                             Total
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Results" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            <span class="_3dfi _3dfj">
+                              {typeof data[0]?.["Link Clicks"] === "number"
+                                ? data[0]?.["Link Clicks"].toLocaleString(
+                                    undefined,
+                                    {
+                                      maximumFractionDigits: 2,
+                                    }
+                                  )
+                                : data[0]?.["Link Clicks"]}
+                            </span>
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Link Clicks
                           </div>
                         </div>
                       </div>

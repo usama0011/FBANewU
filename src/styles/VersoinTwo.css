@@ -178,3 +178,15 @@ body {
 td[data-index="Amount Spent"] {
   border-left: 4px solid #ddd !important; /* Adjust the width and color as needed */
 }
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-ffYGH.style-ffYGH {
+  cursor: default;
+  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v4/yC/r/i2UlfA-ITK0.png?_nc_eui2=AeHwzc6jysKGc_63AFg3UqhYi9EkY4ZzukWL0SRjhnO6RS4Mky7EAfn_asA3OrOOeAT_F3MG_2CGqRZRTaFNdjmn");
+  background-position: -491px -723px;
+  background-size: auto;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
