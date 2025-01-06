@@ -1,12 +1,92 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/ReportsTable.css";
 import SideBar from "../components/SideBar";
 import { useNavigate } from "react-router-dom";
 const ReportsTable = () => {
+  const [isLoading, setIsLoading] = useState(true); // State for managing loading screen
+
   const navigation = useNavigate();
   const handleViewReport = () => {
     navigation("/reporting");
   };
+  useEffect(() => {
+    // Simulate a loading delay of 5 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
+  }, []);
+  // Styles
+  const loadingDivStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    flexDirection: "column",
+    backgroundImage: "linear-gradient(to top, #e6effb, #e9f5ef, #f6eef5)",
+  };
+
+  const spinnerStyle = {
+    width: "25px", // Half of the original 50px width
+    height: "25px", // Adjust height proportionally to maintain the circular shape
+    border: "5px solid #f3f3f3", // Light gray border
+    borderTop: "5px solid #3498db", // Blue spinner
+    borderRadius: "50%",
+    animation: "spin 1s linear infinite",
+  };
+
+  const welcomeTextStyle = {
+    marginBottom: "20px",
+    fontSize: "18px",
+    color: "#333", // Dark gray for readability
+    fontWeight: "bold",
+    textAlign: "center",
+  };
+
+  // Spinner animation
+  const spinnerAnimationStyle = `
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+`;
+
+  // Inject spinner animation style into the document
+  const styleSheet = document.createElement("style");
+  styleSheet.type = "text/css";
+  styleSheet.innerText = spinnerAnimationStyle;
+  document.head.appendChild(styleSheet);
+
+  if (isLoading) {
+    // Loading screen
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          backgroundImage: "linear-gradient(180deg, #f8e9ef, #dbe9fa)",
+        }}
+      >
+        <h5 style={welcomeTextStyle}>Welcome to the Ads Manager Account</h5>
+        <div style={spinnerStyle}></div>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "30px" }}
+        >
+          <img
+            style={{ width: "40px", height: "40px" }}
+            src="https://static.xx.fbcdn.net/rsrc.php/yb/r/CnOoIyhtLSO.svg"
+            alt=""
+          />{" "}
+          <h2 style={{ fontSize: "26px", marginLeft: "10px" }}>Meta</h2>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className="lybhaigradiet"
