@@ -2644,7 +2644,7 @@ const Reporting = () => {
                                                 className="mainbarkks"
                                                 style={{
                                                   width: "100%",
-                                                  height: "745px",
+                                                  height: "760px",
                                                   backgroundColor: "white",
                                                   textAlign: "left",
                                                   overflowX: "auto", // Enables horizontal scrolling
