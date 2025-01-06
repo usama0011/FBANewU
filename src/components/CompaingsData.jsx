@@ -711,7 +711,7 @@ const CompaingsData = ({
       title: (
         <div className="resulsconainer">
           {" "}
-          <div style={{ padding: 0, margin: 0 }}>Cost Pe Results</div>
+          <div style={{ padding: 0, margin: 0 }}>Cost Per Results</div>
           <div>
             <CaretDownOutlined style={{ color: "black" }} color="red" />
           </div>{" "}

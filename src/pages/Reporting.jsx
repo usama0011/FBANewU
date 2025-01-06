@@ -1735,7 +1735,6 @@ const Reporting = () => {
                                                     style={{
                                                       textAlign: "left",
                                                     }}
-                                                    class="x1q85c4o xyi19xy x1ccrb07 xtf3nb5 x1pc53ja xkjj569 x9f619 x1gslohp x6ikm8r x10wlt62 x1l2rt3b snipcss-xQr4l"
                                                   >
                                                     <div
                                                       width="400"
@@ -1749,7 +1748,7 @@ const Reporting = () => {
                                                           class="uiScrollableAreaBody style-SMWs1"
                                                           id="style-SMWs1"
                                                         >
-                                                          <div class="uiScrollableAreaContent">
+                                                          <div class="">
                                                             <ul></ul>
                                                             <ul>
                                                               <div
