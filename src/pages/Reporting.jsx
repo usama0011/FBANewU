@@ -16,13 +16,9 @@ const Reporting = () => {
   const [showcalender, setShowCalender] = useState(false);
   const [pivottable, setPovitTable] = useState("breakdown");
   const [selectedMetrics, setSelectedMetrics] = useState([
-    "Page Name",
     "Campaign Name",
     "Ad Set Name",
-    "Ad Name",
-    "Ad Creative",
     "Impression Device",
-    "Placement",
     "Amount Spent",
     "Impressions",
   ]);

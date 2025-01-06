@@ -3,9 +3,7 @@ import React from "react";
 const ReportsTableLoading = () => {
   return (
     <div style={loadingDivStyle}>
-      <h5 style={welcomeTextStyle}>Welcome to the Ads Manager Account</h5>
       <div style={spinnerStyle}></div>
-      <p>Loading...</p>
     </div>
   );
 };

@@ -371,6 +371,7 @@ const VersionTwoReporting = ({
                   backgroundColor: "white",
                   border: "1px solid #ddd",
                   padding: "8px",
+                  fontWeight: "normal",
                   textAlign: "left",
                   ...(col.dataIndex === "Amount Spent" && {
                     borderLeft: "4px solid #ddd", // Thicker border for Amount Spent column
@@ -420,6 +421,7 @@ const VersionTwoReporting = ({
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "space-between",
+
                                 width: "100%",
                               }}
                               class="x1vjfegm xsgj6o6 x1gslohp"
