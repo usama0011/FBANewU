@@ -366,7 +366,7 @@ const VersionTwoReporting = ({
       className="versointowsirtable"
       style={{
         width: "100%",
-        height: "760px",
+        height: "775px",
         backgroundColor: "white",
         overflowX: "auto",
         overflowY: "auto",
