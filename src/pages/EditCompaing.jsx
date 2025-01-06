@@ -614,7 +614,13 @@ const EditCompaing = () => {
             </div>
           </div>
         </div>
-        <div class="_2k0g" style={{ width: "1450px" }}>
+        <div
+          class="_2k0g"
+          style={{
+            width: "1450px",
+            backgroundImage: "linear-gradient(180deg, #f8e9ef, #dbe9fa)",
+          }}
+        >
           <div class="_3ptk _8z1k">
             <div>
               <div>
