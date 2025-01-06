@@ -642,7 +642,7 @@ const VersionTwoReporting = ({
           ) : (
             <tr>
               <td colSpan={columns.length} style={{ textAlign: "center" }}>
-                {loading ? "Loading..." : "No Data Available"}
+                {loading ? "" : "No Data Available"}
               </td>
             </tr>
           )}
