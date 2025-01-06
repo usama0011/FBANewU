@@ -8,6 +8,7 @@ const VersionTwoReporting = ({
   loading,
   setLoading,
   showID,
+  refreshData,
 }) => {
   const [data, setData] = useState([]);
   const [columns, setColumns] = useState([]);
@@ -129,7 +130,13 @@ const VersionTwoReporting = ({
 
   useEffect(() => {
     fetchData();
-  }, [formattedStartDate, formattedEndDate, selectedMetrics, showID]);
+  }, [
+    formattedStartDate,
+    formattedEndDate,
+    selectedMetrics,
+    showID,
+    refreshData,
+  ]);
 
   useEffect(() => {
     if (data.length > 0) {

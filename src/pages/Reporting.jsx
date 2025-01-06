@@ -12,6 +12,7 @@ const Reporting = () => {
   const [campaignbox, setcampaignbox] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showID, setShowID] = useState("");
+  const [refreshData, setRefreshData] = useState(false);
   const [showcurrentpageID, setcurrentPageID] = useState(false);
   const [showcalender, setShowCalender] = useState(false);
   const [FetchPageID, setFetchPageID] = useState("");
@@ -607,6 +608,10 @@ const Reporting = () => {
     setcurrentPageID(true);
     setFetchPageID(showID);
   };
+  const handleRefreshData = () => {
+    console.log("I am clicked");
+    setRefreshData((prev) => !prev);
+  };
   return (
     <div>
       <div
@@ -876,7 +881,12 @@ const Reporting = () => {
                                                               id="style-tRPTU"
                                                             ></i>
                                                           </div>
-                                                          <div class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli snipcss0-6-23-26">
+                                                          <div
+                                                            onClick={
+                                                              handleRefreshData
+                                                            }
+                                                            class="x8t9es0 x1fvot60 xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj x1pd3egz xeuugli snipcss0-6-23-26"
+                                                          >
                                                             Refresh
                                                           </div>
                                                         </div>
@@ -2645,6 +2655,7 @@ const Reporting = () => {
                                                 <VersionTwoReporting
                                                   startDate={finalStartDate}
                                                   endDate={finalEndDate}
+                                                  refreshData={refreshData}
                                                   selectedMetrics={
                                                     selectedMetrics
                                                   }
