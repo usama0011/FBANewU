@@ -3904,21 +3904,6 @@ const CompaingsData = ({
                     0
                   );
 
-                  const tatalCPMCost = pageData.length
-                    ? pageData.reduce(
-                        (sum, record) => sum + (Number(record.CPM) || 0),
-                        0
-                      ) / pageData.length
-                    : 0; // Handle case where pageData might be empty
-
-                  const largestCostPerResult = pageData.length
-                    ? pageData.reduce(
-                        (sum, record) =>
-                          sum + (Number(record.Costperresult) || 0),
-                        0
-                      ) / pageData.length
-                    : 0; // Handle case where pageData might be empty
-
                   const totalAmountSpent = pageData.reduce(
                     (sum, record) => sum + (Number(record.Amountspent) || 0),
                     0
@@ -3927,33 +3912,7 @@ const CompaingsData = ({
                     (sum, record) => sum + (Number(record.CPM) || 0),
                     0
                   );
-                  const totalCTRImpression = pageData.length
-                    ? pageData.reduce(
-                        (sum, record) => sum + (Number(record.CTR) || 0),
-                        0
-                      ) / pageData.length
-                    : 0; // Handle case where pageData might be empty
 
-                  const totalCPCImpression = pageData.length
-                    ? pageData.reduce(
-                        (sum, record) => sum + (Number(record.CPC) || 0),
-                        0
-                      ) / pageData.length
-                    : 0; // Handle case where pageData might be empty
-
-                  const totalCTRAll = pageData.length
-                    ? pageData.reduce(
-                        (sum, record) => sum + (Number(record.CTRALL) || 0),
-                        0
-                      ) / pageData.length
-                    : 0; // Handle case where pageData might be empty
-
-                  const totalCPCAll = pageData.length
-                    ? pageData.reduce(
-                        (sum, record) => sum + (Number(record.CPCAll) || 0),
-                        0
-                      ) / pageData.length
-                    : 0; // Handle case where pageData might be empty
                   const tatalClicksAll = pageData.reduce(
                     (sum, record) => sum + (Number(record.clicksAll) || 0),
                     0
@@ -3962,6 +3921,24 @@ const CompaingsData = ({
                     (sum, record) => sum + (Number(record.LinksClicks) || 0),
                     0
                   );
+                  const largestCostPerResult = pageData.length
+                    ? totalAmountSpent / LinkClicksAll
+                    : 0; // Handle case where pageData might be empty
+                  const tatalCPMCost = pageData.length
+                    ? (totalAmountSpent / totalImpressions) * 1000
+                    : 0;
+                  const totalCPCImpression = pageData.length
+                    ? totalAmountSpent / LinkClicksAll
+                    : 0;
+                  const totalCTRImpression = pageData.length
+                    ? (LinkClicksAll / totalImpressions) * 100
+                    : 0; // Handle case where pageData might be empty
+                  const totalCTRAll = pageData.length
+                    ? (tatalClicksAll / totalImpressions) * 100
+                    : 0; // Handle case where pageData might be empty
+                  const totalCPCAll = pageData.length
+                    ? totalAmountSpent / tatalClicksAll
+                    : 0; // Handle case where pageData might be empty
                   return (
                     <Table.Summary fixed>
                       <Table.Summary.Row
