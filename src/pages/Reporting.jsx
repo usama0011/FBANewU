@@ -2,8 +2,13 @@ import React, { useState, useEffect } from "react";
 import "../styles/Reporting.css";
 import "react-date-range/dist/styles.css"; // main style file
 import { CaretDownOutlined } from "@ant-design/icons";
+
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  XMarkIcon,
+} from "@heroicons/react/16/solid";
 import SideBar from "../components/SideBar";
 import VersionTwoReporting from "./VersionTwoReporting";
 import ExportReport from "../components/ExportReport";
@@ -3544,7 +3549,8 @@ const Reporting = () => {
           {exportedFiles.map((file) => (
             <div
               style={{
-                backgroundColor: "#c2e1c8",
+                backgroundColor: "black",
+                color: "white",
                 height: "75px",
                 marginBottom: "20px",
               }}
@@ -3562,10 +3568,16 @@ const Reporting = () => {
                     </div>
                   </div>
                   <div class="xeuugli x1iyjqo2 xs83m0k">
-                    <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1uvtmcs">
+                    <div
+                      style={{ color: "white" }}
+                      class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1uvtmcs"
+                    >
                       Your export is ready
                     </div>
-                    <div class="xmi5d70 xw23nyj x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x1fcty0u xeuugli x1uvtmcs">
+                    <div
+                      style={{ color: "white" }}
+                      class="xmi5d70 xw23nyj x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x1fcty0u xeuugli x1uvtmcs"
+                    >
                       {file.name}
                     </div>
                   </div>
@@ -3581,7 +3593,10 @@ const Reporting = () => {
                           <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli x1uvtmcs xh8yej3">
                             <div class="x78zum5">
                               <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1uvtmcs">
+                                <div
+                                  style={{ color: "white" }}
+                                  class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1uvtmcs"
+                                >
                                   View All
                                 </div>
                               </div>
@@ -3600,23 +3615,19 @@ const Reporting = () => {
                       <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli x1uvtmcs xh8yej3">
                         <div class="x78zum5">
                           <div
+                            style={{ color: "white" }}
                             class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
                             data-sscoverage-ignore="true"
                           >
                             Close
                           </div>
-                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                            <div
-                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
-                              role="presentation"
-                            >
-                              <div
-                                class="xtwfq29 style-9aroC"
-                                id="style-9aroC"
-                              ></div>
-                            </div>
-                            ​
-                          </div>
+                          <XMarkIcon
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                              color: "white",
+                            }}
+                          />
                         </div>
                       </span>
                     </div>

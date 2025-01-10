@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Input, Modal, message } from "antd";
 
 import "../styles/ExportReport.css";
@@ -9,6 +9,8 @@ const ExportReport = ({
   finalEndDate,
 }) => {
   // Function to format dates
+  const [isHovered, setIsHovered] = useState(false);
+
   const formatDate = (date) => {
     if (!date) return "";
     const d = new Date(date);
@@ -163,8 +165,18 @@ const ExportReport = ({
                         data-auto-logging-dependent-region=""
                       >
                         <div class="x1iyjqo2 xeuugli">
-                          <div class="x1iyjqo2 xeuugli">
+                          <div
+                            style={{ position: "relative" }}
+                            class="x1iyjqo2 xeuugli"
+                          >
                             <div
+                              onMouseEnter={() => setIsHovered(true)}
+                              onMouseLeave={() => setIsHovered(false)}
+                              style={{
+                                padding: "10px",
+                                backgroundColor: "#f0f0f0",
+                                cursor: "pointer",
+                              }}
                               aria-level="3"
                               class="x1xqt7ti x1uxerd5 x1xlr1w8 xrohxju xbsr9hj xq9mrsl x1yc453h x1mzt3pk x1vvkbs x13faqbe xeuugli x1uvtmcs"
                               id="js_13g"
@@ -172,6 +184,23 @@ const ExportReport = ({
                             >
                               Export report
                             </div>
+                            {/* Hidden Div */}
+                            {isHovered && (
+                              <div
+                                style={{
+                                  position: "absolute",
+                                  top: "0",
+                                  left: "0",
+                                  zIndex: 999,
+                                  padding: "10px",
+                                  backgroundColor: "#ffffff",
+                                  border: "1px solid #ddd",
+                                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                                }}
+                              >
+                                Hidden Content: Export Options
+                              </div>
+                            )}
                           </div>
                         </div>
                         <div
@@ -650,7 +679,10 @@ const ExportReport = ({
                               <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli x1uvtmcs xh8yej3">
                                 <div class="x78zum5">
                                   <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
-                                    <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1uvtmcs">
+                                    <div
+                                      title="Export"
+                                      class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1uvtmcs"
+                                    >
                                       Export
                                     </div>
                                   </div>
