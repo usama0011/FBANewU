@@ -42,7 +42,7 @@ const Login = () => {
                       >
                         <img
                           class="_2qnn _al40 img style-cysix"
-                          src="https://scontent.flhe7-1.fna.fbcdn.net/v/t39.8562-6/278025437_369851991690397_7980697822423283727_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=HQ61CmdiQAoQ7kNvgEEgEzg&_nc_ht=scontent.flhe7-1.fna&oh=00_AYAq-_ChfvtuvUI5HQMRZeSIQBacJEN9PN6oyQGNuG4Hmg&oe=66D6BC94"
+                          src="https://scontent.flhe32-1.fna.fbcdn.net/v/t39.8562-6/278025437_369851991690397_7980697822423283727_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=28b1f4&_nc_ohc=-hthx1O4DmMQ7kNvgFVA9qs&_nc_oc=AdjB2I0kGWkr0ZYQxn7sIk0dl7lkG0ZNtXKvGA0xEpaP9jNqY47Ej09hqw6O1I003Jo&_nc_zt=14&_nc_ht=scontent.flhe32-1.fna&_nc_gid=A1lmF3h1TEPdxVrzH3wi_mx&oh=00_AYBoUz81MCwdmn58tJ-P4QjhZ3ZdP52RzYq_nEl3DDULiA&oe=67872D54"
                           width=""
                           height=""
                           alt="Meta for Business (formerly Facebook for Business)"
@@ -57,7 +57,7 @@ const Login = () => {
                       >
                         <img
                           class="_2qnn _al40 img style-isB7z"
-                          src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.8562-6/278067360_2877467292550717_8057392629201465669_n.svg?_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=f537c7&amp;_nc_eui2=AeEDupHfbsgG0vTgPBkQPJ3VO80JyIKr1aQ7zQnIgqvVpGYtzqoEJw9V_GX7RIvAPvtRNEgaMoAgi93-hWCfvtOI&amp;_nc_ohc=eETO5Jgsjq4Q7kNvgGXJ8ta&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYB3MFSNuloMF_PqcpvVjIKQNGiqt9ibc_1Cr1BYo8IGSQ&amp;oe=665D2370"
+                          src="https://scontent.flhe32-1.fna.fbcdn.net/v/t39.8562-6/278025437_369851991690397_7980697822423283727_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=28b1f4&_nc_ohc=-hthx1O4DmMQ7kNvgFVA9qs&_nc_oc=AdjB2I0kGWkr0ZYQxn7sIk0dl7lkG0ZNtXKvGA0xEpaP9jNqY47Ej09hqw6O1I003Jo&_nc_zt=14&_nc_ht=scontent.flhe32-1.fna&_nc_gid=A1lmF3h1TEPdxVrzH3wi_mx&oh=00_AYBoUz81MCwdmn58tJ-P4QjhZ3ZdP52RzYq_nEl3DDULiA&oe=67872D54"
                           width=""
                           height=""
                           alt="Meta for Business (formerly Facebook for Business)"
@@ -1091,7 +1091,7 @@ const Login = () => {
                                   >
                                     <img
                                       class="_s0 _4ooo _7wcz _tzw img"
-                                      src={LOgoLogo}
+                                      src="https://i.ibb.co/Nmc7XxL/Whats-App-Image-2025-01-05-at-7-26-45-PM.jpg"
                                       alt=""
                                       aria-label="Ali Hamza"
                                       role="img"
@@ -1127,26 +1127,6 @@ const Login = () => {
                                                   personalised support and
                                                   account management.
                                                 </p>
-                                              </div>
-                                              <div class="_1ywr">
-                                                <a
-                                                  role="button"
-                                                  class="_42ft _inf _9c1q _ajm4 _9f5z _2qix _aci5 _aci6 _w1i _inf _9c1q _9f5z _ajm4 _9lf6 _9lfa _am1c _ajln _ajlq _am60 _am63 _98hv _inf _9c1q _9f5z _ajm4 _9lf6 _9lfa _am1c _ajln _ajlq _am60 _am63 style-eygOW"
-                                                  href="#"
-                                                  data-ms='{"creative_detail":"loginv2_nav_Logout_Button","creative":"button"}'
-                                                  id="u_0_v_nn"
-                                                >
-                                                  <div class="_9lfh">
-                                                    <img
-                                                      class="_2qnn _al40 _aci7 _acia img"
-                                                      src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.8562-6/339131123_2375113339334586_1729712879149307566_n.svg?_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=f537c7&amp;_nc_eui2=AeHrigCa7tZTxpyV0avaVP7IRPFtpuO9UhRE8W2m471SFOgErN8ZeL_T-3Kzb6nGbRJqVSMWsJd_KWFM6PCLQPyi&amp;_nc_ohc=FkzwbGGJee0Q7kNvgFpOLam&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYD6Ye_JPStLfDIhkkqIvtViBHw7eWHHuGY-gcnnjUMR8A&amp;oe=665D37F2"
-                                                      width=""
-                                                      height=""
-                                                      alt=""
-                                                    />
-                                                  </div>
-                                                  Log out of Facebook
-                                                </a>
                                               </div>
                                             </div>
                                           </div>
@@ -1698,7 +1678,7 @@ const Login = () => {
                               role="button"
                               id="u_0_2a_4G"
                             >
-                              Support
+                              Supports
                             </a>
                           </div>
                           <div class="_9rrm">
@@ -2041,7 +2021,7 @@ const Login = () => {
                                           >
                                             <img
                                               class="_s0 _4ooo _7wcz _7wcz _tzw img"
-                                              src="https://scontent.flhe11-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_p40x40&amp;_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_eui2=AeG2rVpEGSnoKvn2pjwNv2NUkYnu5-V7Sn6Rie7n5XtKfkwTslnEH9LkbNrIVLdxwFC9iMhx3HkRl6Cg6AO77OB4&amp;_nc_ohc=DRHw0Oj1EroQ7kNvgG-bfGG&amp;_nc_ht=scontent.flhe11-1.fna&amp;oh=00_AYB4yppCQW2e3ulg4ZVH-ouYHkKWEXtZDYLodKl_HbeXWQ&amp;oe=665D1AFF"
+                                              src="https://i.ibb.co/Nmc7XxL/Whats-App-Image-2025-01-05-at-7-26-45-PM.jpg"
                                               alt=""
                                               aria-label="Ali Hamza"
                                               role="img"
