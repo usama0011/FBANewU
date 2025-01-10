@@ -1843,13 +1843,13 @@ const CurrentAccount = () => {
                           <tr></tr>
                           <tr class="odd">
                             <td class="firstRow">
-                              <Link to="/">Hackta LLC</Link>
+                              <Link to="/overviewaccount">Max Media Leads</Link>
                             </td>
                             <td
                               data-sort="1387295665246598"
                               data-testid="all_accounts_table_account_id_cell"
                             >
-                              1387295665246598
+                              2873645665246598
                             </td>
                             <td data-sort="1" class="_5ynv">
                               <div class="_6a _5xjb">

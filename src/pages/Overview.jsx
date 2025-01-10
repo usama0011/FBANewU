@@ -83,34 +83,6 @@ const Overview = () => {
                                                   >
                                                     <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1qughib">
                                                       <div class="x6s0dn4 x78zum5 x1q0g3np xfex06f x3pnbk8 x2lwn1j xeuugli">
-                                                        <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p x1lcm9me x1yr5g0i xrt01vj x10y3i5r">
-                                                          <div class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xtd80it x1jgp7su x1q1rkhy x18tuezv x1xuqjiz xhl3afg x10cdfl8">
-                                                            <img
-                                                              alt=""
-                                                              class="img"
-                                                              src="https://scontent.flhe3-1.fna.fbcdn.net/v/t39.30808-1/440764240_122100670328299638_4115066123442970032_n.jpg?stp=cp0_dst-jpg_s50x50&_nc_cat=108&ccb=1-7&_nc_sid=19114f&_nc_ohc=CX7g6ToRn1YQ7kNvgFHYzkm&_nc_zt=24&_nc_ht=scontent.flhe3-1.fna&_nc_gid=Ag0ED50mTQmIMcvanjcExar&oh=00_AYC3Jmc6J-Cty6QnvzEPsqPSNz2ADWOP9RtNPoUz3HWisw&oe=67257EFF"
-                                                            />
-                                                            <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="xjbqb8w xnalus7 xm81vs4 xu3j5b3 xkh2ocl xwebqov xvyu6v8 xrsgblv x10lij0i xdj266r x11i5rnm xat24cr x1mh8g0r"></div>
-                                                        <div class="x1lliihq x1n2onr6 x2lah0s xxk0z11 xvy4d1p xzolkzo x12go9s9 x1rnf11y xprq8jg">
-                                                          <div
-                                                            class="x10l6tqk x6ikm8r x10wlt62 x13vifvy x17qophe xh8yej3 x5yr21d x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xosibs0 xt24udd xw53kvy x1dka6rp x47corl x10cdfl8"
-                                                            role="presentation"
-                                                          >
-                                                            <div
-                                                              class="x3nfvp2 x120ccyz x4s1yf2"
-                                                              role="presentation"
-                                                            >
-                                                              <div
-                                                                class="xtwfq29 style-jFVi5"
-                                                                id="style-jFVi5"
-                                                              ></div>
-                                                            </div>
-                                                            <div class="x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m xlg9a9y x5yr21d x17qophe x6ikm8r x10wlt62 x47corl x10l6tqk x13vifvy xh8yej3"></div>
-                                                          </div>
-                                                        </div>
                                                         <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli">
                                                           {
                                                             account?.currentAccountname
@@ -372,7 +344,7 @@ const Overview = () => {
                                           role="heading"
                                           id="style-odOxE"
                                         >
-                                          Tayyab Rashid
+                                          Max Media Leads
                                         </div>
                                         <a
                                           class="xt0psk2 x1hl2dhg xt0b8zv xmi5d70 x1fvot60 xxio538 x1qsmy5i xq9mrsl x1yc453h x1h4wwuj x1fcty0u"
@@ -391,7 +363,7 @@ const Overview = () => {
                                     </span>
                                     <span class="xmi5d70 xw23nyj x1xlr1w8 x63nzvj xbsr9hj x1sdyfia x1h4wwuj xeuugli">
                                       {" "}
-                                      Rs125,871.52
+                                      $125,871.52
                                     </span>
                                     <div class="x1rg5ohu x67bb7w">
                                       <div class="xmi5d70 x1fvot60 xxio538 xbsr9hj xq9mrsl x1h4wwuj x1fcty0u x78zum5 xl56j7k x6s0dn4">
@@ -710,10 +682,10 @@ const Overview = () => {
                                                                           class="x3nfvp2 x120ccyz x1heor9g"
                                                                           role="presentation"
                                                                         >
-                                                                          <div
-                                                                            class="xtwfq29 style-RqB5o"
-                                                                            id="style-RqB5o"
-                                                                          ></div>
+                                                                          <img
+                                                                            src="https://external.flhe32-1.fna.fbcdn.net/emg1/v/t13/3707351570932660756?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKFFjCK3CBISmYBPVenTCqyOu-LK6C-5N5xTM7YjFm8oV3n0hABnpTMC0d3Er8_zMRGsIZis7Nyyub7odTsiFKxjQi_hMMT9VaThegdZBLG7xA8lbdHNknzV-C_HWYE0IHpp2XljQl2RhVexUbmscoK&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p46x46_q75_tt6&_nc_oc=Adg5NyeNLfmTslKrnb7iT5g9wUGFTEvJwW73dAq7LXpnm-kaHVndauiw5AbuqD3mMuI&ccb=13-1&oh=06_Q399P3QwtBXPU2GmG8n4A4Fxsvj7PSSAqcMJEKlXfgKORQY&oe=67830908&_nc_sid=58080a"
+                                                                            alt=""
+                                                                          />
                                                                         </div>
                                                                       </div>
                                                                     </div>
