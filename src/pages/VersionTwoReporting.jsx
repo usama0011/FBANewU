@@ -187,7 +187,12 @@ const VersionTwoReporting = ({
                 }}
               >
                 <span style={{ padding: 0, margin: 0 }}>
-                  {Number(row["Link Clicks"]).toLocaleString("en-US")}
+                  {isNaN(Number(row["Link Clicks"])) ||
+                  row["Link Clicks"] === undefined
+                    ? row["Link Clicks"] // Display the original value if it's invalid
+                    : Math.round(Number(row["Link Clicks"])).toLocaleString(
+                        "en-US"
+                      )}
                 </span>
                 <span style={{ padding: 0, margin: 0, color: "#a0a2a3" }}>
                   Link Click
@@ -195,6 +200,7 @@ const VersionTwoReporting = ({
               </div>
             );
           }
+
           if (["CPC", "CPM", "CTR"].includes(metric) && text) {
             const roundedValue = Number(text).toFixed(2); // Round off to two decimal places
 
@@ -206,15 +212,16 @@ const VersionTwoReporting = ({
               return `$${roundedValue}`; // Append $ for CPC and CPM
             }
           }
-
           if (metric === "Impressions" && text) {
-            return Number(text).toLocaleString("en-US"); // Apply comma-separated formatting
+            // Parse the text to a number, round it off, and format it with commas
+            return Math.round(Number(text)).toLocaleString("en-US");
           }
+
           if (metric === "Reach" && text) {
-            return Number(text).toLocaleString("en-US"); // Apply comma-separated formatting
+            return Math.round(Number(text)).toLocaleString("en-US");
           }
           if (metric === "Link Clicks" && text) {
-            return Number(text).toLocaleString("en-US"); // Apply comma-separated formatting
+            return Math.round(Number(text)).toLocaleString("en-US");
           }
           if (metric === "Amount Spent" && text) {
             return <div>${Number(text).toLocaleString("en-US")}</div>; // Apply comma-separated formatting
@@ -811,6 +818,43 @@ const VersionTwoReporting = ({
                         >
                           <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
                             Total
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : col.dataIndex === "Reach" ? (
+                    <div class="_e9n">
+                      <div class="">
+                        <div
+                          style={{ textAlign: "right" }}
+                          geotextcolor="value"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                          class="xmi5d70 x1fvot60 xo1l8bm xxio538 x1lliihq x6ikm8r x10wlt62 xlyipyv xuxw1ft xbsr9hj"
+                        >
+                          <span class="_3dfi _3dfj">
+                            <span class="_3dfi _3dfj">
+                              {typeof data[0]?.[col.dataIndex] === "number"
+                                ? data[0]?.[col.dataIndex].toLocaleString(
+                                    undefined,
+                                    {
+                                      maximumFractionDigits: 2,
+                                    }
+                                  )
+                                : data[0]?.[col.dataIndex]}
+                            </span>
+                          </span>
+                        </div>
+                        <div
+                          style={{ textAlign: "right" }}
+                          class="ellipsis _1ha4"
+                          data-hover="tooltip"
+                          data-tooltip-display="overflow"
+                          data-tooltip-text-direction="auto"
+                        >
+                          <div class="xt0psk2 xmi5d70 xw23nyj xo1l8bm x63nzvj x1541jtf">
+                            Accounts Centre accounts
                           </div>
                         </div>
                       </div>
