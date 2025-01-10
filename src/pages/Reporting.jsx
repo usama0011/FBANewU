@@ -6,9 +6,13 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import SideBar from "../components/SideBar";
 import VersionTwoReporting from "./VersionTwoReporting";
+import ExportReport from "../components/ExportReport";
+import { Button } from "antd";
 
 const Reporting = () => {
   const [isFocused, setIsFocused] = useState(false);
+  const [showDownloadFile, setShowDownloadFile] = useState(false);
+  const [exportedFiles, setExportedFiles] = useState([]);
   const [campaignbox, setcampaignbox] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showID, setShowID] = useState("");
@@ -612,8 +616,27 @@ const Reporting = () => {
     console.log("I am clicked");
     setRefreshData((prev) => !prev);
   };
+  const handleShowDownload = () => {
+    setShowDownloadFile(true);
+  };
+  // Load exported files from local storage on initial render
+  useEffect(() => {
+    const files = JSON.parse(localStorage.getItem("exportedFiles")) || [];
+    setExportedFiles(files);
+  }, [showDownloadFile]);
+  // Function to remove a file
+  const handleRemoveFile = (fileId) => {
+    // Remove file from the state
+    const updatedFiles = exportedFiles.filter((file) => file.id !== fileId);
+    setExportedFiles(updatedFiles);
+
+    // Update localStorage
+    localStorage.setItem("exportedFiles", JSON.stringify(updatedFiles));
+
+    message.success("File removed successfully!");
+  };
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <div
         class="_605a _6nw _jn7 _2is9 _61ve roboto bizsitePage chrome webkit win x1 Locale_en_GB snipcss-WaAOv"
         dir="ltr"
@@ -927,6 +950,7 @@ const Reporting = () => {
                                                   </div>
                                                 </div>
                                                 <span
+                                                  onClick={handleShowDownload}
                                                   id="export_button"
                                                   class="snipcss0-1-1-36"
                                                 >
@@ -3485,6 +3509,122 @@ const Reporting = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {showDownloadFile && (
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100vh",
+            zIndex: 999,
+          }}
+        >
+          <ExportReport
+            finalStartDate={finalStartDate}
+            finalEndDate={finalEndDate}
+            setShowDownloadFile={setShowDownloadFile}
+          />
+        </div>
+      )}
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20px",
+          right: "30px",
+          width: "350px",
+          height: "fit-content",
+          zIndex: 989,
+        }}
+      >
+        <div>
+          {exportedFiles.map((file) => (
+            <div
+              style={{
+                backgroundColor: "#c2e1c8",
+                height: "75px",
+                marginBottom: "20px",
+              }}
+            >
+              <div
+                aria-atomic="true"
+                aria-live="polite"
+                class="x1w33vng x1lcm9me x1yr5g0i xrt01vj x10y3i5r xyamay9 x1l90r2v x1swvt13 x1pi30zi x1iiql3v x1n2onr6 snipcss-8woiR"
+                role="alert"
+              >
+                <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94">
+                  <div class="x6s0dn4 x1c4vz4f x2lah0s xlup9mm x1heor9g">
+                    <div class="x3nfvp2 x120ccyz x1heor9g" role="presentation">
+                      <div class="xtwfq29 style-IB3mq" id="style-IB3mq"></div>
+                    </div>
+                  </div>
+                  <div class="xeuugli x1iyjqo2 xs83m0k">
+                    <div class="xmi5d70 x1fvot60 xo1l8bm xxio538 xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe xeuugli x1uvtmcs">
+                      Your export is ready
+                    </div>
+                    <div class="xmi5d70 xw23nyj x63nzvj xbsr9hj xq9mrsl x1mzt3pk x1vvkbs x13faqbe x1fcty0u xeuugli x1uvtmcs">
+                      {file.name}
+                    </div>
+                  </div>
+                  <div class="x78zum5 x2lwn1j xeuugli x2lah0s x9otpla x1wsgfga x1n0m28w">
+                    <div class="xs83m0k x1c4vz4f x4yhs0f">
+                      <div class="x3nfvp2 x193iq5w xxymvpz" role="none">
+                        <div
+                          aria-busy="false"
+                          class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1ob88yx xaatb59 x1qgsegg xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1swvt13 x1pi30zi"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli x1uvtmcs xh8yej3">
+                            <div class="x78zum5">
+                              <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                                <div class="x1xqt7ti x1fvot60 xk50ysn xxio538 x1heor9g xuxw1ft x6ikm8r x10wlt62 xlyipyv x1h4wwuj xeuugli x1uvtmcs">
+                                  View All
+                                </div>
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      onClick={() => handleRemoveFile(file.id)}
+                      aria-busy="false"
+                      class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x16tdsg8 xggy1nq x1ja2u2z x1t137rt x6s0dn4 x1ejq31n xd10rxx x1sy0etr x17r0tee x3nfvp2 xdl72j9 x1q0g3np x2lah0s x193iq5w x1n2onr6 x1hl2dhg x87ps6o xxymvpz xlh3980 xvmahel x1lku1pv x1g40iwv x1lcm9me x1yr5g0i xrt01vj x10y3i5r xo1l8bm xbsr9hj x1v911su x1y1aw1k xwib8y2 x1ye3gou xn6708d"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <span class="xmi5d70 x1fvot60 xxio538 x1heor9g xq9mrsl x1h4wwuj x1pd3egz xeuugli x1uvtmcs xh8yej3">
+                        <div class="x78zum5">
+                          <div
+                            class="x1qvwoe0 xjm9jq1 x1y332i5 xcwd3tp x1jyxor1 x39eecv x6ikm8r x10wlt62 x10l6tqk xuxw1ft x1i1rx1s"
+                            data-sscoverage-ignore="true"
+                          >
+                            Close
+                          </div>
+                          <div class="x6s0dn4 x78zum5 x1q0g3np xozqiw3 x2lwn1j xeuugli x1iyjqo2 x19lwn94 x1hc1fzr x13dflua x6o7n8i xxziih7 x12w9bfk xl56j7k xh8yej3">
+                            <div
+                              class="x3nfvp2 x120ccyz x1heor9g x2lah0s x1c4vz4f"
+                              role="presentation"
+                            >
+                              <div
+                                class="xtwfq29 style-9aroC"
+                                id="style-9aroC"
+                              ></div>
+                            </div>
+                            ​
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

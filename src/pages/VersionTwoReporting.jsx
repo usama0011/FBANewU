@@ -360,6 +360,34 @@ const VersionTwoReporting = ({
       setData(filteredData);
     }
   }, [selectedMetrics, originalData]);
+  const getFirstRowsByCampaign = (data) => {
+    const campaignFirstRows = [];
+    const seenCampaigns = new Set();
+
+    data.forEach((row) => {
+      if (!seenCampaigns.has(row["Campaign Name"])) {
+        seenCampaigns.add(row["Campaign Name"]);
+        campaignFirstRows.push(row);
+      }
+    });
+
+    return campaignFirstRows;
+  };
+  const calculateFooterTotals = (data, columns) => {
+    const firstRows = getFirstRowsByCampaign(data);
+
+    const totals = columns.reduce((acc, col) => {
+      if (["Amount Spent", "Impressions"].includes(col.dataIndex)) {
+        acc[col.dataIndex] = firstRows.reduce(
+          (sum, row) => sum + (Number(row[col.dataIndex]) || 0),
+          0
+        );
+      }
+      return acc;
+    }, {});
+
+    return totals;
+  };
 
   return (
     <div
