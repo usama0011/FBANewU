@@ -1512,7 +1512,7 @@ const CurrentAccount = () => {
                                           objectFit: "cover",
                                         }}
                                         class="img"
-                                        src={LOgoLogo}
+                                        src="https://i.ibb.co/Nmc7XxL/Whats-App-Image-2025-01-05-at-7-26-45-PM.jpg"
                                         height="28"
                                         width="28"
                                         alt=""
